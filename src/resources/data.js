@@ -98,7 +98,7 @@ const experience = [
     subtitle: "National University of Singapore",
     date: "Aug 2018 - Present",
     extra: "Notable Modules:",
-    body: "Undergraduate in National Univeristy of Singapore (NUS), undergoing Bachelor of Engineering in Computer Engineering (with Honours) programme.",
+    body: "Undergraduate in National University of Singapore (NUS), pursuing a Bachelor of Engineering in Computer Engineering (with Honours).",
     skills: [
       "Real-Time Operating Systems (RTOS)",
 

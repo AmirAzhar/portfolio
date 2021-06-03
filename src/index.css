@@ -225,7 +225,7 @@ a {
 .vertical-timeline-element-body {
   font-family: var(--sub-header-font);
   font-size: medium;
-  line-height: 95%;
+  line-height: 150%;
   text-align: justify;
   margin-top: 20px;
 }
@@ -237,11 +237,11 @@ a {
 
 .skills {
   font-family: var(--header-font);
-  background-color: var(--accent-color); /* Changing background color */
+  background-color: #15f4ee; /* Changing background color */
   border-radius: 20px; /* Making border radius */
   width: auto; /* Making auto-sizable width */
   height: auto; /* Making auto-sizable height */
-  font-size: x-small; /* Changing font size */
+  font-size: small; /* Changing font size */
   margin: 2px;
   padding: 2px;
   transition: 0.2s;
@@ -250,6 +250,7 @@ a {
 
 .skills:hover {
   transform: scale(1.05);
+
   cursor: default;
 }
 
@@ -632,8 +633,8 @@ a {
 
   .vertical-timeline-element-body {
     font-family: var(--sub-header-font);
-    font-size: x-small;
-    line-height: 95%;
+    font-size: small;
+    line-height: 120%;
     text-align: justify;
     margin-top: 10px;
   }
@@ -645,7 +646,6 @@ a {
   }
   .skills {
     font-family: var(--header-font);
-    background-color: var(--accent-color); /* Changing background color */
     border-radius: 15px; /* Making border radius */
     width: auto; /* Making auto-sizable width */
     height: auto; /* Making auto-sizable height */

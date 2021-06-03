@@ -14,13 +14,13 @@ const About = () => {
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
                 Amir Azhar
               </span>{" "}
-              and welcome to my personal webiste! I am a computer engineering
+              and welcome to my personal website! I am a computer engineering
               undergraduate, and my interest in web development began back in
-              2019. It all started when I wanted to create a webiste as a
-              virtual gift for a friend during the Covid-19 lockdown!
+              2019. It all started when I wanted to create a website as a
+              virtual gift for my girlfriend during the Covid-19 lockdown!
               <br />
               <br />
-              Today, I have a strong interest in Machine Learning, Artifical
+              Today, I have a strong interest in Machine Learning, Artificial
               Intelligence and Cybersecurity. These interests were sparked from
               the modules I had taken in{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
@@ -41,7 +41,7 @@ const About = () => {
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
                 Internship Opportunities
               </span>
-              , where I can hone and improve my skills.
+              , where I can hone and further improve my skills.
             </h1>
           </div>
           <div>

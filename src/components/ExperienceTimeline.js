@@ -33,7 +33,7 @@ const ExperienceTimeline = () => {
               {exp.body}
               <br />
               <br />
-              <br />
+
               {exp.extra}
               <Row className="skillsRow">
                 {exp.skills.map((text) => (
