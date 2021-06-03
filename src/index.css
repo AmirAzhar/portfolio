@@ -81,6 +81,31 @@ a {
   background-image: url(https://img.icons8.com/android/24/ffffff/menu.png) !important;
 }
 
+.resumeBtn {
+  background-color: var(--primary-color);
+  color: var(--accent-color) !important;
+  border-radius: 15px;
+  border: 2px solid var(--accent-color);
+  margin-left: 10px;
+  font-family: var(--header-font);
+
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 50%,
+    var(--primary-color) 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  transition: all 0.7s ease-out;
+}
+
+.resumeBtn:hover {
+  text-decoration: none;
+  background-position: left bottom;
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
 /* Modal Styling */
 
 .projectGrid {
@@ -302,7 +327,7 @@ a {
 }
 
 /* Smaller Laptop */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1170px) {
   .aboutText {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -316,7 +341,7 @@ a {
     justify-items: center;
     align-items: center;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 0vh;
   }
 
   .aboutImg {
@@ -352,6 +377,57 @@ a {
     opacity: 0.6;
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 2%;
+    margin-left: -2px;
+    background: white;
+  }
+  .contactLine {
+    text-align: center;
+  }
+  .contactMe {
+    color: var(--accent-color) !important;
+    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    border-color: var(--accent-color);
+    font-family: var(--header-font);
+    border-radius: 7px;
+    font-size: 25px;
+    margin-top: 25px;
+
+    background: linear-gradient(
+      to right,
+      var(--accent-color) 50%,
+      var(--primary-color) 50%
+    );
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 0.7s ease-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .resumeBtn {
+    background-color: var(--primary-color);
+    color: var(--accent-color) !important;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color);
+    margin-left: 0px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+    background: linear-gradient(
+      to right,
+      var(--accent-color) 50%,
+      var(--primary-color) 50%
+    );
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 0.7s ease-out;
+    display: block;
+    margin-right: auto;
   }
 }
 
@@ -426,6 +502,11 @@ a {
   }
   .navbar-toggler-icon {
     font-size: medium;
+  }
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 3%;
+    margin-left: -2px;
+    background: white;
   }
 }
 
@@ -565,14 +646,19 @@ a {
   .skills {
     font-family: var(--header-font);
     background-color: var(--accent-color); /* Changing background color */
-    border-radius: 20px; /* Making border radius */
+    border-radius: 15px; /* Making border radius */
     width: auto; /* Making auto-sizable width */
     height: auto; /* Making auto-sizable height */
-    font-size: 5px; /* Changing font size */
+    font-size: 8px; /* Changing font size */
     margin: 2px;
     padding: 2px;
     transition: 0.2s;
     color: black;
+  }
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 5%;
+    margin-left: -2px;
+    background: white;
   }
 }
 
