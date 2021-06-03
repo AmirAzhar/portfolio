@@ -1,4 +1,3 @@
-import { Row, Col } from "react-bootstrap";
 import myPic from "./resources/me.jpg";
 
 const About = () => {

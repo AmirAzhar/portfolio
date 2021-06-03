@@ -1,5 +1,5 @@
 // Import utilities
-import { Row, Col, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { useState } from "react";
 
 //Import components
