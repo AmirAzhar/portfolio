@@ -431,6 +431,13 @@ a {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+  .aboutContent {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+  }
+
   .header {
     font-family: var(--header-font);
     font-size: 25px;
