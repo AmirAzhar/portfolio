@@ -15,19 +15,19 @@ const About = () => {
                 Amir Azhar
               </span>{" "}
               and welcome to my personal webiste! I am a computer engineering
-              undergraduate, who started gaining interest in web development
-              back in 2019. It all started when i wanted to make a webiste as a
+              undergraduate, and my interest in web development began back in
+              2019. It all started when I wanted to create a webiste as a
               virtual gift for a friend during the Covid-19 lockdown!
               <br />
               <br />
               Today, I have a strong interest in Machine Learning, Artifical
-              Intelligence and Cybersecurity, all developed through modules I've
-              taken in{" "}
+              Intelligence and Cybersecurity. These interests were sparked from
+              the modules I had taken in{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
                 National University of Singapore (NUS)
               </span>
               . As an engineer, I am also well-versed in hardware programming
-              which I have definitely strengthen during my internship at{" "}
+              which I have definitely strengthened during my internship at{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
                 Huawei Singapore Research Centre
               </span>
