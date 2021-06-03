@@ -420,6 +420,13 @@ a {
   .contactLine {
     text-align: center;
   }
+
+  .nav-link {
+    font-size: large;
+  }
+  .navbar-toggler-icon {
+    font-size: medium;
+  }
 }
 
 /* Mobile */
