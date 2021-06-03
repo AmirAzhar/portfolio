@@ -21,7 +21,7 @@ const ExperienceTimeline = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#112240", color: "#d9e2ec" }}
             contentArrowStyle={{ borderRight: "7px solid  #112240" }}
-            iconStyle={{ background: "#112240", color: "#64ffda" }}
+            iconStyle={{ background: "#112240", color: "#ff5aac" }}
             icon={exp.subtitle === "Huawei" ? <MdWork /> : <GiGraduateCap />}
             date={exp.date}
           >
