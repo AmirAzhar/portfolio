@@ -23,7 +23,7 @@ const ProjectAccordion = () => {
                     <th>Project</th>
                     <th>During</th>
                     <th>Description</th>
-                    <th>Technologies/Skills</th>
+                    <th style={{ textAlign: "center" }}>Technologies/Skills</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -38,9 +38,9 @@ const ProjectAccordion = () => {
                           {proj.link}
                         </a>
                       </td>
-                      <td>
+                      <td className="tdtech">
                         {proj.tech.map((text) => (
-                          <Tags className="projtech" text={text} />
+                          <Tags text={text} />
                         ))}
                       </td>
                     </tr>

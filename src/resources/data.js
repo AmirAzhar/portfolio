@@ -120,23 +120,31 @@ const experience = [
 const archiveProjects = [
   {
     year: "2020",
+    title: "CareYourPets",
+    from: "NUS CS2101",
+    desc: "A web based database application for pet caring service. Application allows pet owner to search for care takers for their pets. Developed as a group project. Project can be found on github at ",
+    link: "https://github.com/CareYourPets/CS2102_2021_S1_Team9",
+    tech: ["Database", "PostgreSQL", "Node.js", "React"],
+  },
+  {
+    year: "2020",
     title: "AI N-Puzzle Solver",
     from: "NUS CS3243",
-    desc: "Solving N-puzzles by utilising simple search algorithms such as BFS,UCS and A*.",
+    desc: "Solving N-puzzles by utilising simple search algorithms such as BFS,UCS and A*. Developed as a group project.",
     tech: ["AI"],
   },
   {
     year: "2020",
     title: "AI Sudoku Solver",
     from: "NUS CS3243",
-    desc: "Solving Sudoku as a constraint satisfaction problem, utilising backtracking search with variable/value ordering heuristics and inference mechanisms.",
+    desc: "Solving Sudoku as a constraint satisfaction problem, utilising backtracking search with variable/value ordering heuristics and inference mechanisms. Developed as a group project.",
     tech: ["AI"],
   },
   {
     year: "2020",
     title: "AI Pacman Solver",
     from: "NUS CS3243",
-    desc: "Solving the classic Pacman game using Reinforcement Learning concepts, specifically Q-learing agents",
+    desc: "Solving the classic Pacman game using Reinforcement Learning concepts, specifically Q-learing agents. Developed as a group project.",
     tech: ["AI"],
   },
   {

@@ -239,8 +239,8 @@ a {
   font-family: var(--header-font);
   background-color: #15f4ee; /* Changing background color */
   border-radius: 20px; /* Making border radius */
-  width: auto; /* Making auto-sizable width */
-  height: auto; /* Making auto-sizable height */
+  width: fit-content; /* Making auto-sizable width */
+  height: fit-content; /* Making auto-sizable height */
   font-size: small; /* Changing font size */
   margin: 2px;
   padding: 2px;
@@ -380,23 +380,17 @@ tr {
 }
 
 th {
-  text-align: center !important;
+  text-align: left !important;
   opacity: 0.7;
 }
 
 .tdyear {
   color: var(--accent-color);
   font-family: var(--header-font);
-  text-align: center;
 }
 
 .tdtitle {
   font-family: var(--header-font);
-  text-align: center;
-}
-
-.tdfrom {
-  text-align: center;
 }
 
 .tddesc {
@@ -407,12 +401,17 @@ th {
 .projLink {
   color: var(--text-color) !important;
   text-decoration: underline;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.projLink:hover {
+  opacity: 0.7;
 }
 
 .projtech {
-  display: block !important;
-  width: auto !important;
-  height: auto !important;
+  font-family: var(--body-font);
+  font-size: 17px;
   text-align: center;
 }
 
