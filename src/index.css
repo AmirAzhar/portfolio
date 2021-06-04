@@ -239,8 +239,8 @@ a {
   font-family: var(--header-font);
   background-color: #15f4ee; /* Changing background color */
   border-radius: 20px; /* Making border radius */
-  width: fit-content; /* Making auto-sizable width */
-  height: fit-content; /* Making auto-sizable height */
+  width: auto; /* Making auto-sizable width */
+  height: auto; /* Making auto-sizable height */
   font-size: small; /* Changing font size */
   margin: 2px;
   padding: 2px;
