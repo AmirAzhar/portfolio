@@ -357,11 +357,6 @@ a {
   cursor: pointer;
 }
 
-.accBtn:focus {
-  text-decoration: none !important;
-  box-shadow: 0 !important;
-}
-
 .accCard {
   background-color: var(--primary-color) !important;
   border: none !important;
