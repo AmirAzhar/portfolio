@@ -117,4 +117,32 @@ const experience = [
   },
 ];
 
-export { projects, experience };
+const archiveProjects = [
+  {
+    year: "2020",
+    title: "AI N-Puzzle Solver",
+    from: "NUS CS3243",
+    desc: "Solving N-puzzles by utilising simple search algorithms such as BFS,UCS and A*.",
+  },
+  {
+    year: "2020",
+    title: "AI Sudoku Solver",
+    from: "NUS CS3243",
+    desc: "Solving Sudoku as a constraint satisfaction problem, utilising backtracking search with variable/value ordering heuristics and inference mechanisms.",
+  },
+  {
+    year: "2020",
+    title: "AI Pacman Solver",
+    from: "NUS CS3243",
+    desc: "Solving the classic Pacman game using Reinforcement Learning concepts, specifically Q-learing agents",
+  },
+  {
+    year: "2019",
+    title: "Personal Portfolio v1.0",
+    from: "Personal",
+    desc: "Personal portfolio made with pure HTML/CSS/JS. Have definitely made significance improvement since then. Can be found at ",
+    link: "https://amirazhar.github.io/Portfolio-v1.0/",
+  },
+];
+
+export { projects, experience, archiveProjects };

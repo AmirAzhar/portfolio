@@ -327,6 +327,88 @@ a {
   margin: 20px 20px 20px 20px;
 }
 
+.acc {
+  margin-bottom: 30px;
+}
+
+.accBtn {
+  color: var(--accent-color) !important;
+  font-family: var(--header-font);
+  border: 2px solid var(--accent-color) !important;
+  text-decoration: none !important;
+  box-shadow: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 50%,
+    var(--primary-color) 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  transition: all 0.7s ease-out !important;
+}
+
+.accBtn:hover {
+  text-decoration: none !important;
+  box-shadow: 0 !important;
+  background-position: left bottom;
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+.accBtn:focus {
+  text-decoration: none !important;
+  box-shadow: 0 !important;
+}
+
+.accCard {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.accContent {
+  color: var(--text-color);
+}
+
+.projectTable {
+  color: var(--text-color) !important;
+}
+
+tr {
+  border: hidden !important;
+}
+
+th {
+  text-align: center !important;
+  opacity: 0.7;
+}
+
+.tdyear {
+  color: var(--accent-color);
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.tdtitle {
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.tdfrom {
+  text-align: center;
+}
+
+.tddesc {
+  font-family: var(--body-font);
+  font-size: 17px;
+}
+
+.projLink {
+  color: var(--text-color) !important;
+  text-decoration: underline;
+}
+
 /* Smaller Laptop */
 @media screen and (max-width: 1170px) {
   .aboutText {

@@ -5,6 +5,7 @@ import { useState } from "react";
 //Import components
 import ProjectModal from "./components/ProjectModal";
 import ExperienceTimeline from "./components/ExperienceTimeline";
+import ProjectAccordion from "./components/ProjectAccordion";
 import { projects } from "./resources/data";
 
 const Experience = () => {
@@ -42,6 +43,7 @@ const Experience = () => {
           onHide={() => setModalShow(false)}
         />
       </div>
+      <ProjectAccordion />
       <div className="header"> Experience & Education</div>
 
       <ExperienceTimeline />
