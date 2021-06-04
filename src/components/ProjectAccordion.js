@@ -1,5 +1,6 @@
 import { Accordion, Card, Button, Table } from "react-bootstrap";
 import { archiveProjects } from "../resources/data";
+import Tags from "./Tags";
 const ProjectAccordion = () => {
   return (
     <div className="acc">
@@ -22,6 +23,7 @@ const ProjectAccordion = () => {
                     <th>Project</th>
                     <th>During</th>
                     <th>Description</th>
+                    <th>Technologies/Skills</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -35,6 +37,11 @@ const ProjectAccordion = () => {
                         <a className="projLink" href={proj.link}>
                           {proj.link}
                         </a>
+                      </td>
+                      <td>
+                        {proj.tech.map((text) => (
+                          <Tags className="projtech" text={text} />
+                        ))}
                       </td>
                     </tr>
                   ))}
