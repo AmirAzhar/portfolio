@@ -15,6 +15,7 @@ import Navigation from "./components/Navigation";
 import Contact from "./Contact";
 import About from "./About";
 import Portfolio from "./Portfolio";
+import CV from "./CV";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
               </Route>
               <Route path="/">
                 <About className="contentWrap" />
+              </Route>
+              <Route path="/cv">
+                <CV />
               </Route>
             </Switch>
           </div>
