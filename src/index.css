@@ -310,12 +310,10 @@ a {
   max-width: 100%;
   transition: 0.3s;
   align-items: center;
-  opacity: 0.8;
 }
 
 .aboutImg:hover {
   transform: scale(1.1);
-  opacity: 1;
 }
 
 .aboutText {
