@@ -246,11 +246,11 @@ a {
   padding: 2px;
   transition: 0.2s;
   color: black;
+  text-align: center;
 }
 
 .skills:hover {
   transform: scale(1.05);
-
   cursor: default;
 }
 
@@ -407,6 +407,13 @@ th {
 .projLink {
   color: var(--text-color) !important;
   text-decoration: underline;
+}
+
+.projtech {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  text-align: center;
 }
 
 /* Smaller Laptop */
