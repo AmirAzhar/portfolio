@@ -35,7 +35,7 @@ const About = () => {
               <br />
               For the upcoming{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                Winter 2021
+                Summer and Winter 2021
               </span>
               , I am seeking any web development or software engineering{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>

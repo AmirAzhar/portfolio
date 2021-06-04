@@ -12,7 +12,7 @@ const ProjectAccordion = () => {
             variant="link"
             eventKey="0"
           >
-            Project Archive
+            More Projects
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="accContent">

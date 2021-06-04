@@ -76,7 +76,7 @@ const experience = [
     subtitle: "Huawei",
     date: "Jan 2021 - Present",
     extra: "Skills:",
-    body: "Develop Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
+    body: "Developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
     skills: [
       "Computer Networks",
 
@@ -121,8 +121,8 @@ const archiveProjects = [
   {
     year: "2020",
     title: "CareYourPets",
-    from: "NUS CS2101",
-    desc: "A web based database application for pet caring service. Application allows pet owner to search for care takers for their pets. Developed as a group project. Project can be found on github at ",
+    from: "NUS CS2102",
+    desc: "A web based database application for a pet caring service. Application allows pet owners to search for care takers, for their pets. Developed as a group project. Project can be found on github at ",
     link: "https://github.com/CareYourPets/CS2102_2021_S1_Team9",
     tech: ["Database", "PostgreSQL", "Node.js", "React"],
   },
@@ -130,7 +130,7 @@ const archiveProjects = [
     year: "2020",
     title: "AI N-Puzzle Solver",
     from: "NUS CS3243",
-    desc: "Solving N-puzzles by utilising simple search algorithms such as BFS,UCS and A*. Developed as a group project.",
+    desc: "Solving N-puzzles by utilising simple search algorithms such as BFS, UCS and A*. Developed as a group project.",
     tech: ["AI"],
   },
   {
@@ -144,7 +144,7 @@ const archiveProjects = [
     year: "2020",
     title: "AI Pacman Solver",
     from: "NUS CS3243",
-    desc: "Solving the classic Pacman game using Reinforcement Learning concepts, specifically Q-learing agents. Developed as a group project.",
+    desc: "Solving the classic Pacman game using reinforcement learning concepts, specifically Q-learing agents. Developed as a group project.",
     tech: ["AI"],
   },
   {
