@@ -119,12 +119,20 @@ const experience = [
 
 const archiveProjects = [
   {
+    year: "NOW",
+    title: "ThriftyDrips eCommerce",
+    from: "Personal",
+    desc: "Currently still in development, a MERN eCommerce site for my personal business venture, Thrifty Drips. Since you're reading this, do give us a follow on Instagram at",
+    link: "https://www.instagram.com/thriftydrips/",
+    tech: ["MongoDB", "Node.js", "React.js", "Express.js"],
+  },
+  {
     year: "2020",
     title: "CareYourPets",
     from: "NUS CS2102",
     desc: "A web based database application for a pet caring service. Application allows pet owners to search for care takers, for their pets. Developed as a group project. Project can be found on github at ",
     link: "https://github.com/CareYourPets/CS2102_2021_S1_Team9",
-    tech: ["Database", "PostgreSQL", "Node.js", "React"],
+    tech: ["PostgreSQL", "Node.js", "React.js"],
   },
   {
     year: "2020",
