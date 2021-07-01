@@ -74,7 +74,7 @@ const experience = [
     color: "rgb(33, 150, 243)",
     title: "Vehicle Security Intern",
     subtitle: "Huawei",
-    date: "Jan 2021 - Present",
+    date: "Jan 2021 - June 2021",
     extra: "Skills:",
     body: "Developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
     skills: [

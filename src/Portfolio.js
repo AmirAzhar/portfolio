@@ -43,6 +43,7 @@ const Experience = () => {
           onHide={() => setModalShow(false)}
         />
       </div>
+
       <ProjectAccordion />
       <div className="header"> Experience & Education</div>
 
