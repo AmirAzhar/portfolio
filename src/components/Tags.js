@@ -1,4 +1,4 @@
-import "../css/tags.css";
+import "./tags.css";
 
 import { Col } from "react-bootstrap";
 

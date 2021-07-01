@@ -1,4 +1,4 @@
-import "../css/projectmodal.css";
+import "./projectmodal.css";
 
 import { Modal } from "react-bootstrap";
 

@@ -1,14 +1,14 @@
-import "./css/portfolio.css";
+import "./portfolio.css";
 
 // Import utilities
 import { Image } from "react-bootstrap";
 import { useState } from "react";
 
 //Import components
-import ProjectModal from "./components/ProjectModal";
-import ExperienceTimeline from "./components/ExperienceTimeline";
-import ProjectAccordion from "./components/ProjectAccordion";
-import { projects } from "./resources/data";
+import ProjectModal from "../components/ProjectModal";
+import ExperienceTimeline from "../components/ExperienceTimeline";
+import ProjectAccordion from "../components/ProjectAccordion";
+import { projects } from "../resources/data";
 
 const Experience = () => {
   const [modalShow, setModalShow] = useState(false);

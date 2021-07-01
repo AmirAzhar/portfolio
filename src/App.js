@@ -12,9 +12,9 @@ import { Scrollbar } from "react-scrollbars-custom";
 import Navigation from "./components/Navigation";
 
 // Import pages
-import Contact from "./Contact";
-import About from "./About";
-import Portfolio from "./Portfolio";
+import Contact from "./screens/Contact";
+import About from "./screens/About";
+import Portfolio from "./screens/Portfolio";
 
 function App() {
   return (

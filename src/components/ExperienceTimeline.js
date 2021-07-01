@@ -1,4 +1,4 @@
-import "../css/experiencetimeline.css";
+import "./experiencetimeline.css";
 
 // Import utilities
 import {

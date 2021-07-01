@@ -1,4 +1,4 @@
-import "../css/navigation.css";
+import "./navigation.css";
 
 import { Navbar, Nav } from "react-bootstrap";
 import cv from "../resources/cv.pdf";

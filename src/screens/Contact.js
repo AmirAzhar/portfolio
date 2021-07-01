@@ -1,4 +1,4 @@
-import "./css/contact.css";
+import "./contact.css";
 
 import { Row } from "react-bootstrap";
 

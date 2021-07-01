@@ -1,4 +1,4 @@
-import "../css/projectcarousel.css";
+import "./projectcarousel.css";
 
 import { Carousel } from "react-bootstrap";
 
