@@ -28,6 +28,32 @@
   cursor: pointer;
 }
 
+.accBtnActive {
+  color: var(--primary-color) !important;
+  font-family: var(--header-font);
+  border: 2px solid var(--accent-color) !important;
+  text-decoration: none !important;
+  box-shadow: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 50%,
+    var(--accent-color) 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  transition: all 0.7s ease-out !important;
+}
+
+/* .accBtnActive:hover {
+  text-decoration: none !important;
+  box-shadow: 0 !important;
+  background-position: left bottom;
+  color: var(--accent-color) !important;
+  cursor: pointer;
+} */
+
 .accCard {
   background-color: var(--primary-color) !important;
   border: none !important;
