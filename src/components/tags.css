@@ -2,9 +2,8 @@
   font-family: var(--header-font);
   background-color: #15f4ee; /* Changing background color */
   border-radius: 20px; /* Making border radius */
-  width: auto; /* Making auto-sizable width */
   height: auto; /* Making auto-sizable height */
-  font-size: small; /* Changing font size */
+  font-size: 12px; /* Changing font size */
   margin: 2px;
   padding: 2px;
   transition: 0.2s;
@@ -20,14 +19,7 @@
 /* Mobile */
 @media screen and (max-width: 480px) {
   .skills {
-    font-family: var(--header-font);
     border-radius: 15px; /* Making border radius */
-    width: auto; /* Making auto-sizable width */
-    height: auto; /* Making auto-sizable height */
     font-size: 8px; /* Changing font size */
-    margin: 2px;
-    padding: 2px;
-    transition: 0.2s;
-    color: black;
   }
 }
