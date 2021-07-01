@@ -1,6 +1,7 @@
 import "./contact.css";
 
 import { Row } from "react-bootstrap";
+import TypeWriterEffect from "react-typewriter-effect";
 
 const Contact = () => {
   return (
@@ -8,8 +9,17 @@ const Contact = () => {
       <div className="contactContent">
         <Row className="justify-content-md-center">
           <h1 className="contactLine">
-            Want <span style={{ color: "#ff5aac" }}>me</span> for an internship
-            position?
+            <TypeWriterEffect
+              startDelay={100}
+              cursorColor="white"
+              multiText={[
+                "Want to collaborate on a project?",
+                "Want to hire me?",
+                "Want to compliment my website?",
+              ]}
+              typeSpeed={100}
+              scrollArea={document}
+            />
           </h1>
         </Row>
         <Row className="justify-content-md-center">

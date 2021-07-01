@@ -6,6 +6,11 @@
   margin-top: 30vh;
 }
 
+.react-typewriter-text {
+  text-align: center !important;
+  font-size: 50px;
+}
+
 .contactMe {
   color: var(--accent-color) !important;
   border-style: solid;
@@ -77,6 +82,7 @@
     margin-right: 10px;
     text-align: center;
   }
+
   .contactMe {
     color: var(--accent-color) !important;
     border-style: solid;
