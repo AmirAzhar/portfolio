@@ -2,6 +2,7 @@ import "./contact.css";
 
 import { Row } from "react-bootstrap";
 import TypeWriterEffect from "react-typewriter-effect";
+import Typist from "react-typist";
 
 const Contact = () => {
   return (
@@ -9,17 +10,13 @@ const Contact = () => {
       <div className="contactContent">
         <Row className="justify-content-md-center">
           <h1 className="contactLine">
-            <TypeWriterEffect
-              startDelay={100}
-              cursorColor="white"
-              multiText={[
-                "Want to collaborate on a project?",
-                "Want to hire me?",
-                "Want to compliment my website?",
-              ]}
-              typeSpeed={100}
-              scrollArea={document}
-            />
+            <Typist blink={true}>
+              <span>Want to collaborate on a project?</span>
+              <Typist.Backspace count={26} delay={1000} />
+              <span> hire me?</span>
+              <Typist.Backspace count={9} delay={1000} />
+              <span> compliment my website?</span>
+            </Typist>
           </h1>
         </Row>
         <Row className="justify-content-md-center">

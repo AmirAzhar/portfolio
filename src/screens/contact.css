@@ -6,9 +6,9 @@
   margin-top: 30vh;
 }
 
-.react-typewriter-text {
-  text-align: center !important;
-  font-size: 50px;
+.Typist .Cursor--blinking {
+  opacity: 1;
+  animation: blink 1s linear infinite;
 }
 
 .contactMe {
@@ -77,7 +77,6 @@
 /* Mobile */
 @media screen and (max-width: 480px) {
   .contactLine {
-    font-size: 25px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
