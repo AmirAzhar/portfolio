@@ -1,0 +1,78 @@
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.projectThumbnail {
+  width: 250px;
+  height: 250px;
+  transition: 0.3s;
+  cursor: pointer;
+  object-fit: cover;
+  opacity: 0.6;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.projectThumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1170px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+
+  .projectThumbnail {
+    width: 250px;
+    height: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.6;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .projectThumbnail {
+    width: 120px;
+    height: 120px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.6;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}

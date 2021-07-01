@@ -1,3 +1,5 @@
+import "../css/projectcarousel.css";
+
 import { Carousel } from "react-bootstrap";
 
 const ProjectCarousel = ({ contentImages }) => {

@@ -1,3 +1,5 @@
+import "./css/contact.css";
+
 import { Row } from "react-bootstrap";
 
 const Contact = () => {

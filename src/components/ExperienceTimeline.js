@@ -1,3 +1,5 @@
+import "../css/experiencetimeline.css";
+
 // Import utilities
 import {
   VerticalTimeline,

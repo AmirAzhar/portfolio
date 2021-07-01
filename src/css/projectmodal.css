@@ -1,0 +1,133 @@
+/* Modal Styling */
+
+.modal-content {
+  background-color: var(--secondary-color) !important;
+}
+
+.modal-header {
+  border-bottom: 0 !important;
+}
+.modal-body {
+  border-top: 0 !important;
+}
+
+.close {
+  color: white !important;
+  font-size: xx-large !important;
+}
+
+.projectTitle {
+  line-height: 70%;
+  font-size: x-large;
+  padding-top: 5%;
+  font-family: var(--header-font);
+  color: var(--accent-color);
+}
+
+.projectSubtitle {
+  font-size: large;
+  color: grey;
+  font-family: var(--header-font);
+  color: var(--text-color);
+}
+
+.projectBody1 {
+  font-size: medium;
+  text-align: justify;
+  font-family: var(--sub-header-font);
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.projectBody2 {
+  font-size: medium;
+  text-align: justify;
+  font-family: var(--sub-header-font);
+  color: var(--text-color);
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1170px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+
+  .projectThumbnail {
+    width: 250px;
+    height: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.6;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+
+  .projectTitle {
+    font-size: large;
+  }
+
+  .projectSubtitle {
+    font-size: medium;
+  }
+
+  .projectBody1 {
+    font-size: small;
+  }
+
+  .projectBody2 {
+    font-size: small;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .projectThumbnail {
+    width: 120px;
+    height: 120px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.6;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .projectTitle {
+    font-size: medium;
+  }
+
+  .projectSubtitle {
+    font-size: small;
+  }
+
+  .projectBody1 {
+    font-size: x-small;
+  }
+
+  .projectBody2 {
+    font-size: x-small;
+  }
+}

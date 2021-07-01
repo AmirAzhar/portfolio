@@ -1,3 +1,5 @@
+import "../css/projectmodal.css";
+
 import { Modal } from "react-bootstrap";
 
 import ProjectCarousel from "./ProjectCarousel";

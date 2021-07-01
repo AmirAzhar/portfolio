@@ -1,3 +1,5 @@
+import "../css/tags.css";
+
 import { Col } from "react-bootstrap";
 
 const Tags = ({ text }) => {

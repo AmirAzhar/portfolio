@@ -1,3 +1,5 @@
+import "./css/portfolio.css";
+
 // Import utilities
 import { Image } from "react-bootstrap";
 import { useState } from "react";

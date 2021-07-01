@@ -1,3 +1,5 @@
+import "../css/projectaccordian.css";
+
 import { Accordion, Card, Button, Table } from "react-bootstrap";
 import { archiveProjects } from "../resources/data";
 import Tags from "./Tags";

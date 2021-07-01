@@ -1,0 +1,126 @@
+.aboutContent {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutGrid {
+  display: inline-grid;
+  grid-template-columns: 50vw 30vw;
+  grid-gap: 10vw;
+  justify-items: center;
+  align-items: center;
+}
+
+.aboutImg {
+  max-width: 100%;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.aboutImg:hover {
+  transform: scale(1.1);
+}
+
+.aboutText {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 150%;
+  margin: 20px 20px 20px 20px;
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1170px) {
+  .aboutText {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: justify;
+    line-height: 150%;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .aboutContent {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0vh;
+  }
+
+  .aboutImg {
+    max-width: 100%;
+    transition: 0.3s;
+    align-items: center;
+    opacity: 0.8;
+  }
+
+  .aboutText {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: justify;
+    line-height: 150%;
+    margin: 20px 20px 20px 20px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .aboutText {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 25px;
+    text-align: justify;
+    line-height: 150%;
+    margin: 5px 5px 5px 5px;
+  }
+  .aboutGrid {
+    display: inline-grid;
+    grid-template-columns: 80vw;
+    grid-gap: 10vw;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .aboutImg {
+    max-width: 80%;
+    transition: 0.3s;
+    align-items: center;
+    opacity: 0.8;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .aboutContent {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .aboutText {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 15px;
+    text-align: justify;
+    line-height: 100%;
+    margin: 5px 5px 5px 5px;
+  }
+  .aboutGrid {
+    display: inline-grid;
+    grid-template-columns: 80vw;
+    grid-gap: 10vw;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .aboutImg {
+    max-width: 80%;
+    transition: 0.3s;
+    align-items: center;
+    opacity: 0.8;
+  }
+}

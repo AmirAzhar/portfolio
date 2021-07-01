@@ -1,0 +1,102 @@
+.contactLine {
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+.contactMe {
+  color: var(--accent-color) !important;
+  border-style: solid;
+  padding: 10px 10px 10px 10px;
+  border-color: var(--accent-color);
+  font-family: var(--header-font);
+  border-radius: 7px;
+  font-size: 25px;
+  margin-top: 15px;
+
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 50%,
+    var(--primary-color) 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  transition: all 0.7s ease-out;
+}
+
+.contactMe:hover {
+  text-decoration: none;
+  background-position: left bottom;
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1170px) {
+  .contactLine {
+    text-align: center;
+  }
+  .contactMe {
+    color: var(--accent-color) !important;
+    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    border-color: var(--accent-color);
+    font-family: var(--header-font);
+    border-radius: 7px;
+    font-size: 25px;
+    margin-top: 25px;
+
+    background: linear-gradient(
+      to right,
+      var(--accent-color) 50%,
+      var(--primary-color) 50%
+    );
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 0.7s ease-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .contactLine {
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .contactLine {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .contactMe {
+    color: var(--accent-color) !important;
+    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    border-color: var(--accent-color);
+    font-family: var(--header-font);
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 15px;
+
+    background: linear-gradient(
+      to right,
+      var(--accent-color) 50%,
+      var(--primary-color) 50%
+    );
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 0.7s ease-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

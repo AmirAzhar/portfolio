@@ -1,0 +1,94 @@
+.vertical-timeline-element-icon {
+  border-color: var(--accent-color) !important;
+}
+
+.vertical-timeline-element-date {
+  color: white !important;
+  font-size: large !important;
+  margin-top: 0px !important;
+  font-family: var(--header-font);
+}
+
+.vertical-timeline.vertical-timeline--two-columns:before {
+  left: 50%;
+  margin-left: -2px;
+  background: white;
+}
+
+.vertical-timeline-element-title {
+  font-family: var(--header-font);
+  font-size: x-large;
+  line-height: 60%;
+  color: var(--accent-color);
+}
+
+.vertical-timeline-element-subtitle {
+  font-family: var(--header-font);
+  font-size: larger;
+}
+
+.vertical-timeline-element-body {
+  font-family: var(--sub-header-font);
+  font-size: medium;
+  line-height: 150%;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.skillsRow {
+  margin-left: 0 !important;
+  margin-top: 5px;
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 2%;
+    margin-left: -2px;
+    background: white;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 3%;
+    margin-left: -2px;
+    background: white;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .vertical-timeline-element-title {
+    font-family: var(--header-font);
+    font-size: small;
+    line-height: 60%;
+    color: var(--accent-color);
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-family: var(--header-font);
+    font-size: small;
+  }
+
+  .vertical-timeline-element-body {
+    font-family: var(--sub-header-font);
+    font-size: small;
+    line-height: 120%;
+    text-align: justify;
+    margin-top: 10px;
+  }
+  .vertical-timeline-element-date {
+    color: white !important;
+    font-size: small !important;
+    margin-top: 0px !important;
+    font-family: var(--header-font);
+  }
+
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 5%;
+    margin-left: -2px;
+    background: white;
+  }
+}

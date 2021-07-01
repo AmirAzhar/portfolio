@@ -1,3 +1,5 @@
+import "./css/about.css";
+
 import myPic from "./resources/me.jpg";
 
 const About = () => {

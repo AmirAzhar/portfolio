@@ -1,0 +1,75 @@
+/* Navbar styling */
+
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.nav-link {
+  font-family: var(--sub-header-font);
+  font-size: x-large;
+  margin-top: 3px;
+  color: var(--text-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(https://img.icons8.com/android/24/ffffff/menu.png) !important;
+}
+
+.resumeBtn {
+  background-color: var(--primary-color);
+  color: var(--accent-color) !important;
+  border-radius: 15px;
+  border: 2px solid var(--accent-color);
+  margin-left: 10px;
+  font-family: var(--header-font);
+
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 50%,
+    var(--primary-color) 50%
+  );
+  background-size: 300% 100%;
+  background-position: right bottom;
+  transition: all 0.7s ease-out;
+}
+
+.resumeBtn:hover {
+  text-decoration: none;
+  background-position: left bottom;
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+/* Smaller Laptop */
+@media screen and (max-width: 1170px) {
+  .resumeBtn {
+    background-color: var(--primary-color);
+    color: var(--accent-color) !important;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color);
+    margin-left: 0px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+    background: linear-gradient(
+      to right,
+      var(--accent-color) 50%,
+      var(--primary-color) 50%
+    );
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 0.7s ease-out;
+    display: block;
+    margin-right: auto;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: large;
+  }
+  .navbar-toggler-icon {
+    font-size: medium;
+  }
+}

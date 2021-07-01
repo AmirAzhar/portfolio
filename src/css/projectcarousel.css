@@ -1,0 +1,34 @@
+/* Carousell Styling */
+.carouImage {
+  max-height: 300px;
+}
+
+.carouVid {
+  max-height: 300px;
+}
+
+.carousel-indicators {
+  filter: invert(1);
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .carouImage {
+    max-height: 250px;
+  }
+
+  .carouVid {
+    max-height: 250px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .carouImage {
+    max-height: 200px;
+  }
+
+  .carouVid {
+    max-height: 200px;
+  }
+}
