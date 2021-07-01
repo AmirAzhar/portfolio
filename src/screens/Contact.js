@@ -1,7 +1,6 @@
 import "./contact.css";
 
 import { Row } from "react-bootstrap";
-import TypeWriterEffect from "react-typewriter-effect";
 import Typist from "react-typist";
 
 const Contact = () => {
