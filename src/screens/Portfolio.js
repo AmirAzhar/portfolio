@@ -3,6 +3,7 @@ import "./portfolio.css";
 // Import utilities
 import { Image } from "react-bootstrap";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 //Import components
 import ProjectModal from "../components/ProjectModal";
@@ -27,7 +28,8 @@ const Experience = () => {
 
       <div className="projectGrid">
         {projects.map((proj) => (
-          <Image
+          <motion.img
+            // <Image
             className="projectThumbnail"
             src={proj.thumbnail}
             alt={proj.alt}
@@ -37,6 +39,8 @@ const Experience = () => {
               setModalShow(true);
               setState(proj);
             }}
+            whileHover={{ scale: 1.1, opacity: 1 }}
+            // />
           />
         ))}
         <ProjectModal

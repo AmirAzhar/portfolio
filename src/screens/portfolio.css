@@ -17,12 +17,6 @@
   position: relative;
 }
 
-.projectThumbnail:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
-  opacity: 1;
-}
-
 /* Smaller Laptop */
 @media screen and (max-width: 1170px) {
   .projectGrid {
