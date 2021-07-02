@@ -8,13 +8,16 @@ const Contact = () => {
     <div className="content">
       <div className="contactContent">
         <Row className="justify-content-md-center">
-          <h1 className="contactLine">
-            <Typist blink={true}>
-              <span>Want to collaborate on a project?</span>
+          <h1 className="contactLine1">
+            <Typist>
+              <span>Want to </span>
+              <br />
+              <Typist.Delay ms={500} />
+              <span>collaborate on a project?</span>
               <Typist.Backspace count={26} delay={1000} />
-              <span> hire me?</span>
-              <Typist.Backspace count={9} delay={1000} />
-              <span> compliment my website?</span>
+              <span>hire me?</span>
+              <Typist.Backspace count={8} delay={1000} />
+              <span>compliment my website?</span>
             </Typist>
           </h1>
         </Row>
