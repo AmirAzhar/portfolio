@@ -11,10 +11,11 @@ import { Scrollbar } from "react-scrollbars-custom";
 // Import components
 import Navigation from "./components/Navigation";
 
-// Import pages
+// Import screens
 import Contact from "./screens/Contact";
 import About from "./screens/About";
 import Portfolio from "./screens/Portfolio";
+import Home from "./screens/Home";
 
 function App() {
   return (
@@ -39,8 +40,11 @@ function App() {
               <Route path="/contact">
                 <Contact className="contentWrap" />
               </Route>
-              <Route path="/">
+              {/* <Route path="/">
                 <About className="contentWrap" />
+              </Route> */}
+              <Route path="/">
+                <Home className="contentWrap" />
               </Route>
             </Switch>
           </div>
