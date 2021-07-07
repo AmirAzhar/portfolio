@@ -33,15 +33,9 @@ function App() {
               <Navigation />
             </nav>
             <Switch>
-              <Route path="/portfolio">
-                <Portfolio className="contentWrap" />
-              </Route>
-              <Route path="/contact">
-                <Contact className="contentWrap" />
-              </Route>
-              <Route path="/">
-                <About className="contentWrap" />
-              </Route>
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/" component={About} />
             </Switch>
           </div>
         </Router>
