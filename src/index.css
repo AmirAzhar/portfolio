@@ -27,6 +27,7 @@ a {
 .content {
   background-color: var(--primary-color);
   padding: 10px 10px 10px 10px;
+  padding-top: 5vw;
 }
 
 .header {

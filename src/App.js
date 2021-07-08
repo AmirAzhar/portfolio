@@ -29,9 +29,7 @@ function App() {
       >
         <Router>
           <div className="pageContainer">
-            <nav>
-              <Navigation />
-            </nav>
+            <Navigation />
             <Switch>
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
