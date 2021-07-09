@@ -23,11 +23,18 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: var(--primary-color);
+}
+
+.bm-cross-button:hover {
+  transform: scale(1.5);
+  opacity: 0.6;
 }
 
 /*
@@ -60,9 +67,35 @@
 /* Individual item */
 .bm-item {
   display: inline-block;
+  transition: 0.3s;
+}
+
+.bm-item-list a {
+  font-size: 20px !important;
+  padding: 0.8em;
+  font-family: var(--header-font);
+  color: var(--primary-color) !important;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-item:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.menuIcon {
+  font-size: 30px !important;
+  margin-right: 15px;
+}
+
+.menu-item_active {
+  background-color: var(--accent-color) !important;
+  width: max-content;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
 }

@@ -33,6 +33,7 @@ function App() {
             <Switch>
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
+              <Route path="/home" component={About} />
               <Route path="/" component={About} />
             </Switch>
           </div>
