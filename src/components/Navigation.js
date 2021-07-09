@@ -19,7 +19,7 @@ const Navigation = () => {
     <Menu>
       <a
         id="home"
-        className={screen == "home" ? "menu-item_active" : "menu-item"}
+        className={screen == "/" ? "menu-item_active" : "menu-item"}
         href="/"
       >
         <AiOutlineHome className="menuIcon" /> Home
