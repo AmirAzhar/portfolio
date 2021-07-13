@@ -10,6 +10,7 @@ import { Scrollbar } from "react-scrollbars-custom";
 
 // Import components
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 // Import pages
 import Contact from "./screens/Contact";
@@ -36,6 +37,7 @@ function App() {
               <Route path="/home" component={About} />
               <Route path="/" component={About} />
             </Switch>
+            <Footer />
           </div>
         </Router>
       </Scrollbar>
