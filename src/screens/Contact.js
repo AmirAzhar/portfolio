@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="content">
       <div className="contactContent">
         <Row className="justify-content-md-center">
-          <h1 className="contactLine1">
+          <h1 className="contactLine">
             <Typist>
               <span>Want to </span>
               <br />

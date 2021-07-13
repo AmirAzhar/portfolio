@@ -1,4 +1,4 @@
-.contactLine1 {
+.contactLine {
   font-family: var(--header-font);
   color: var(--text-color);
   font-size: 50px;
@@ -42,6 +42,9 @@
   color: var(--primary-color) !important;
   cursor: pointer;
 }
+.justify-content-md-center {
+  justify-content: center !important;
+}
 
 /* Smaller Laptop */
 @media screen and (max-width: 1170px) {
@@ -76,6 +79,7 @@
 @media screen and (max-width: 768px) {
   .contactLine {
     text-align: center;
+    font-size: 45px;
   }
 }
 
@@ -85,6 +89,7 @@
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+    font-size: 30px;
   }
 
   .contactMe {
