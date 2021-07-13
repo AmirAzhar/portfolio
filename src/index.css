@@ -74,6 +74,9 @@ a {
     margin-bottom: 50px;
     margin-top: -15px;
   }
+  .content {
+    padding-top: 15vw;
+  }
 }
 
 /* Mobile */
@@ -84,6 +87,10 @@ a {
     color: var(--text-color);
     margin-bottom: 20px;
     margin-top: 0px;
+  }
+
+  .content {
+    padding-top: 30vw;
   }
 }
 
