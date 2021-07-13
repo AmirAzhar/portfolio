@@ -16,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scrollbars-custom": "^4.0.25",
+    "react-spring": "^9.2.3",
     "react-typist": "^2.0.5",
     "react-vertical-timeline-component": "^3.3.3",
     "web-vitals": "^1.1.2"

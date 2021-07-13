@@ -16,6 +16,7 @@ const Navigation = () => {
   const [screen, setScreen] = useState(window.location.pathname);
 
   return (
+
     <Menu>
       <a
         id="home"
@@ -49,6 +50,7 @@ const Navigation = () => {
         <GrDocumentPdf className="menuIcon" /> CV
       </a>
     </Menu>
+
   );
 };
 
