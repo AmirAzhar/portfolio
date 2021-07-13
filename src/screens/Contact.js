@@ -2,6 +2,7 @@ import "./contact.css";
 
 import { Row } from "react-bootstrap";
 import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
 
 const Contact = () => {
   return (
@@ -9,7 +10,7 @@ const Contact = () => {
       <div className="contactContent">
         <Row className="justify-content-md-center">
           <h1 className="contactLine">
-            <Typist>
+            <Typist blink="True">
               <span>Want to </span>
               <br />
               <Typist.Delay ms={500} />
