@@ -6,9 +6,9 @@ import cv from "../resources/cv.pdf";
 
 import { AiOutlineHome } from "react-icons/ai";
 import { IoIosContact } from "react-icons/io";
-import { GrDocumentPdf } from "react-icons/gr";
+import { VscFilePdf } from "react-icons/vsc";
 import { BsBriefcase } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
+import { GoMail } from "react-icons/go";
 
 import { elastic as Menu } from "react-burger-menu";
 
@@ -42,7 +42,7 @@ const Navigation = () => {
         className={screen == "/contact" ? "menu-item_active" : "menu-item"}
         href="/contact"
       >
-        <HiOutlineMail className="menuIcon" /> Contact
+        <GoMail className="menuIcon" /> Contact
       </a>
       <a
         id="portfolio"
@@ -52,7 +52,7 @@ const Navigation = () => {
         <BsBriefcase className="menuIcon" /> Portfolio
       </a>
       <a id="cv" className="menu-item" href={cv} target="_blank">
-        <GrDocumentPdf className="menuIcon" /> CV
+        <VscFilePdf className="menuIcon" /> CV
       </a>
     </Menu>
   );
