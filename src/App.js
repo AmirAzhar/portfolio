@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 import Contact from "./screens/Contact";
 import About from "./screens/About";
 import Portfolio from "./screens/Portfolio";
-import Home from "./screens/Home";
+// import Home from "./screens/Home"; *TO IMPLEMENT HOMEPAGE*
 
 function App() {
   return (
@@ -33,12 +33,10 @@ function App() {
           <div className="pageContainer">
             <Navigation />
             <Switch>
-
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
               <Route path="/home" component={About} />
               <Route path="/" component={About} />
-
             </Switch>
             <Footer />
           </div>

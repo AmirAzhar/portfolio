@@ -16,18 +16,23 @@ const Navigation = () => {
   const [screen, setScreen] = useState(window.location.pathname);
 
   return (
-
     <Menu>
-      <a
+      {/* <a
         id="home"
         className={screen == "/" ? "menu-item_active" : "menu-item"}
         href="/"
       >
         <AiOutlineHome className="menuIcon" /> Home
-      </a>
+      </a> *TO IMPLEMENT HOMEPAGE* */}
       <a
         id="about"
-        className={screen == "/about" ? "menu-item_active" : "menu-item"}
+        className={
+          screen == "/about"
+            ? "menu-item_active"
+            : screen == "/"
+            ? "menu-item_active"
+            : "menu-item"
+        }
         href="/about"
       >
         <IoIosContact className="menuIcon" /> About
@@ -50,7 +55,6 @@ const Navigation = () => {
         <GrDocumentPdf className="menuIcon" /> CV
       </a>
     </Menu>
-
   );
 };
 
