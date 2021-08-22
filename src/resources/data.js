@@ -124,7 +124,7 @@ const archiveProjects = [
     from: "Personal",
     desc: "Currently still in development, a MERN eCommerce site for my personal business venture, Thrifty Drips. Since you're reading this, do give us a follow on Instagram at ",
     link: "https://www.instagram.com/thriftydrips/",
-    tech: ["MongoDB", "Node.js", "React.js", "Express.js"],
+    tech: ["MongoDB", "Node.js", "React.js", "Express.js", "Redux"],
   },
   {
     year: "2020",
