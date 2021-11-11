@@ -25,10 +25,11 @@ const About = () => {
               Today, I have a very strong interest in frontend web development.
               Despite not being enrolled in any web development modules in{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                National University of Singapore (NUS), I taught myself various
-                skills and technologies, starting from plain
-                CSS/HTML/Javascript, to now utilising tech stacks such as MERN.
+                National University of Singapore (NUS),
               </span>
+              I taught myself various skills and technologies, starting from
+              plain CSS/HTML/Javascript, to now utilising tech stacks such as
+              MERN.
               <br />
               <br />
               For the upcoming{" "}
