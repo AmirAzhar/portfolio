@@ -40,8 +40,8 @@ const About = () => {
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
                 Frontend Enginner / Fullstack Developer Full-time Roles
               </span>
-              , where I can continue pursuing my interest in frontend
-              development.
+              , where I can continue pursuing my passion in frontend development
+              and set foot in the tech industry.
             </h1>
           </div>
           <div>
