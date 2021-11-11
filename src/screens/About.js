@@ -22,28 +22,25 @@ const About = () => {
               virtual gift for my girlfriend during the Covid-19 lockdown!
               <br />
               <br />
-              Today, I have a strong interest in Machine Learning, Artificial
-              Intelligence and Cybersecurity. These interests were sparked from
-              the modules I had taken in{" "}
+              Today, I have a very strong interest in frontend web development.
+              Despite not being enrolled in any web development modules in{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                National University of Singapore (NUS)
+                National University of Singapore (NUS), I taught myself various
+                skills and technologies, starting from plain
+                CSS/HTML/Javascript, to now utilising tech stacks such as MERN.
               </span>
-              . As an engineer, I am also well-versed in hardware programming
-              which I have definitely strengthened during my internship at{" "}
-              <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                Huawei Singapore Research Centre
-              </span>
-              . <br />
+              <br />
               <br />
               For the upcoming{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                Winter 2021
+                May 2022
               </span>
-              , I am seeking any web development or software engineering{" "}
+              , I will be graduating and hence am looking for{" "}
               <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                Internship Opportunities
+                Frontend Enginner / Fullstack Developer Full-time Roles
               </span>
-              , where I can hone and further improve my skills.
+              , where I can continue pursuing my interest in frontend
+              development.
             </h1>
           </div>
           <div>
