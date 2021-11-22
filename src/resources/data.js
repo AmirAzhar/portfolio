@@ -71,12 +71,21 @@ const projects = [
 
 const experience = [
   {
-    color: "rgb(33, 150, 243)",
-    title: "Vehicle Security Intern",
+    // color: "rgb(33, 150, 243)",
+    title: "Wordpress Developer",
+    subtitle: "National University of Singapore",
+    date: "Sep 2021 - Present",
+    extra: "Skills:",
+    body: "A part-time role invloving designing, management and implementation of NUS Global Studies WordPress, visited daily by hundreds of undergraduates and prospective students.",
+    skills: ["HTML", "CSS", "Javascript", "Wordpress"],
+  },
+  {
+    // color: "rgb(33, 150, 243)",
+    title: "Automotive Cybersecurity Engineer",
     subtitle: "Huawei",
     date: "Jan 2021 - June 2021",
     extra: "Skills:",
-    body: "Developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
+    body: "An internship where I developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
     skills: [
       "Computer Networks",
 

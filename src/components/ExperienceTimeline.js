@@ -24,7 +24,13 @@ const ExperienceTimeline = () => {
             contentStyle={{ background: "#112240", color: "#d9e2ec" }}
             contentArrowStyle={{ borderRight: "7px solid  #112240" }}
             iconStyle={{ background: "#112240", color: "#ff5aac" }}
-            icon={exp.subtitle === "Huawei" ? <MdWork /> : <GiGraduateCap />}
+            icon={
+              exp.title === "BEng Computer Engineering" ? (
+                <GiGraduateCap />
+              ) : (
+                <MdWork />
+              )
+            }
             date={exp.date}
           >
             <div className="vertical-timeline-element-title">{exp.title}</div>
