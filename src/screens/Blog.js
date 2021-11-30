@@ -47,7 +47,7 @@ function Blog() {
         )}
       </div>
       <div className="community">
-        View my other community contributions!
+        Check out my other community contributions!
         <div className="socials_container">
           <Icon
             icon="logos:stackoverflow-icon"

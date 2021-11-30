@@ -46,18 +46,18 @@ const Navigation = () => {
         <BsBriefcase className="menuIcon" /> Portfolio
       </a>
       <a
-        id="contact"
-        className={screen == "/contact" ? "menu-item_active" : "menu-item"}
-        href="/contact"
-      >
-        <GoMail className="menuIcon" /> Contact
-      </a>
-      <a
         id="blog"
         className={screen == "/blog" ? "menu-item_active" : "menu-item"}
         href="/blog"
       >
         <BiNews className="menuIcon" /> Blog
+      </a>
+      <a
+        id="contact"
+        className={screen == "/contact" ? "menu-item_active" : "menu-item"}
+        href="/contact"
+      >
+        <GoMail className="menuIcon" /> Contact
       </a>
       <a id="cv" className="menu-item" href={cv} target="_blank">
         <VscFilePdf className="menuIcon" /> CV
