@@ -9,6 +9,7 @@ import { IoIosContact } from "react-icons/io";
 import { VscFilePdf } from "react-icons/vsc";
 import { BsBriefcase } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
+import { BiNews } from "react-icons/bi";
 
 import { elastic as Menu } from "react-burger-menu";
 
@@ -50,6 +51,13 @@ const Navigation = () => {
         href="/contact"
       >
         <GoMail className="menuIcon" /> Contact
+      </a>
+      <a
+        id="blog"
+        className={screen == "/blog" ? "menu-item_active" : "menu-item"}
+        href="/blog"
+      >
+        <BiNews className="menuIcon" /> Blog
       </a>
       <a id="cv" className="menu-item" href={cv} target="_blank">
         <VscFilePdf className="menuIcon" /> CV

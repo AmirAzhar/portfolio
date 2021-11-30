@@ -16,6 +16,7 @@ import Footer from "./components/Footer";
 import Contact from "./screens/Contact";
 import About from "./screens/About";
 import Portfolio from "./screens/Portfolio";
+import Blog from "./screens/Blog";
 // import Home from "./screens/Home"; *TO IMPLEMENT HOMEPAGE*
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
               <Route path="/home" component={About} />
+              <Route path="/blog" component={Blog} />
               <Route path="/" component={About} />
             </Switch>
             <Footer />
