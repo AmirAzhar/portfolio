@@ -96,7 +96,7 @@ const experience = [
   },
   {
     // color: "rgb(33, 150, 243)",
-    title: "Wordpress Developer",
+    title: "WordPress Developer",
     subtitle: "National University of Singapore",
     date: "Sep 2021 - Present",
     extra: "Technologies/Skills:",
