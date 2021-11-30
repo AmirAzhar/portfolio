@@ -1,6 +1,6 @@
 import "./about.css";
 
-import myPic from "../resources/me.jpg";
+import myPic from "../resources/images//me.jpg";
 
 const About = () => {
   return (

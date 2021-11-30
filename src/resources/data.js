@@ -1,21 +1,21 @@
-import recyclesgThumbnail from "./recycleSG.png";
-import recyclesg1 from "./R1.png";
-import recyclesg2 from "./R2.png";
-import recyclesg3 from "./R3.png";
-import recyclesg4 from "./R4.png";
+import recyclesgThumbnail from "./images/recycleSG.png";
+import recyclesg1 from "./images/R1.png";
+import recyclesg2 from "./images/R2.png";
+import recyclesg3 from "./images/R3.png";
+import recyclesg4 from "./images/R4.png";
 
-import hallbookerThumbnail from "./hallBooker.png";
-import hallbooker1 from "./H1.png";
+import hallbookerThumbnail from "./images/hallBooker.png";
+import hallbooker1 from "./images/H1.png";
 
-import dashboardThumbnail from "./dashboardThumbnail.png";
-import dashboard1 from "./dashboard1.png";
-import dashboard2 from "./dashboard2.png";
-import dashboard3 from "./dashboard3.png";
-import dashboard4 from "./dashboard4.png";
+import dashboardThumbnail from "./images/dashboardThumbnail.png";
+import dashboard1 from "./images/dashboard1.png";
+import dashboard2 from "./images/dashboard2.png";
+import dashboard3 from "./images/dashboard3.png";
+import dashboard4 from "./images/dashboard4.png";
 
-import alexThumbnail from "./alex.png";
-import alex1 from "./A1.gif";
-import alex2 from "./A2.gif";
+import alexThumbnail from "./images/alex.png";
+import alex1 from "./images/A1.gif";
+import alex2 from "./images/A2.gif";
 
 const projects = [
   {

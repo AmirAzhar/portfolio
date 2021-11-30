@@ -38,18 +38,18 @@ const Navigation = () => {
         <IoIosContact className="menuIcon" /> About
       </a>
       <a
-        id="contact"
-        className={screen == "/contact" ? "menu-item_active" : "menu-item"}
-        href="/contact"
-      >
-        <GoMail className="menuIcon" /> Contact
-      </a>
-      <a
         id="portfolio"
         className={screen == "/portfolio" ? "menu-item_active" : "menu-item"}
         href="/portfolio"
       >
         <BsBriefcase className="menuIcon" /> Portfolio
+      </a>
+      <a
+        id="contact"
+        className={screen == "/contact" ? "menu-item_active" : "menu-item"}
+        href="/contact"
+      >
+        <GoMail className="menuIcon" /> Contact
       </a>
       <a id="cv" className="menu-item" href={cv} target="_blank">
         <VscFilePdf className="menuIcon" /> CV
