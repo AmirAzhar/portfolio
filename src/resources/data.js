@@ -7,8 +7,11 @@ import recyclesg4 from "./R4.png";
 import hallbookerThumbnail from "./hallBooker.png";
 import hallbooker1 from "./H1.png";
 
-import learnitThumbnail from "./learnit.png";
-import learnit1 from "./L1.png";
+import dashboardThumbnail from "./dashboardThumbnail.png";
+import dashboard1 from "./dashboard1.png";
+import dashboard2 from "./dashboard2.png";
+import dashboard3 from "./dashboard3.png";
+import dashboard4 from "./dashboard4.png";
 
 import alexThumbnail from "./alex.png";
 import alex1 from "./A1.gif";
@@ -16,15 +19,20 @@ import alex2 from "./A2.gif";
 
 const projects = [
   {
-    title: "Learn it Like Beckham",
-    thumbnail: learnitThumbnail,
-    alt: "Learn it Like Beckham",
+    title: "DanceDance Dashboard",
+    thumbnail: dashboardThumbnail,
+    alt: "DanceDance Dashboard",
     body1:
-      "Learn in Like Beckham is a Machine Learning model that forecasts goal difference of football matches by utilising pre-match metrics",
+      "The DanceDance Dashboard is a full stack web application used to stream real-time data and analytics of dancers wearing wearables.",
     body2:
-      "It can be used in various football applications such as data-based coaching or match fixing detection. This model was developed by Lee Raiyan Zulkifli, Liu Shuyang, Saw Lin Min, Quek Wei Ping, Yan Boshen and I, as part of NUS School of Computing module, CS3244 (Machine Learning).",
-    subtitle: "Aug 2020 - Nov 2020",
-    contentImages: [{ id: 1, link: learnit1 }],
+      "The Dashboard is one of the 6 components in the CG4002 Capstone project. It is a full stack web application that utilises the MERN tech stack (MongoDB, Express, React and Node). This web application serves as a user interface for dancers using our application. The core component of this web application is to display real time data received directly from the dancers' sensors. The web application is run locally and not delpoyed not any hosting websites.",
+    subtitle: "Aug 2021 - Nov 2021",
+    contentImages: [
+      { id: 1, link: dashboard1 },
+      { id: 2, link: dashboard2 },
+      { id: 3, link: dashboard3 },
+      { id: 4, link: dashboard4 },
+    ],
   },
   {
     title: "Alex RTOS Bot",
@@ -72,19 +80,35 @@ const projects = [
 const experience = [
   {
     // color: "rgb(33, 150, 243)",
+    title: "Software Engineer Intern",
+    subtitle: "SolarAI Technologies",
+    date: "Dec 2021 - Present",
+    extra: "Technologies/Skills:",
+    body: "A part-time internship where I work closely with our Engineering Lead to develop a cloud-based Minimum Viable Product from the ground up. Design, development, and implementation of web application. Assist with the creation of a full system pipeline and architecture.",
+    skills: [
+      "Next.js",
+      "React",
+      "Severless",
+      "Jest",
+      "DynamoDB",
+      "Elasticsearch",
+    ],
+  },
+  {
+    // color: "rgb(33, 150, 243)",
     title: "Wordpress Developer",
     subtitle: "National University of Singapore",
     date: "Sep 2021 - Present",
-    extra: "Skills:",
-    body: "A part-time role invloving designing, management and implementation of NUS Global Studies WordPress, visited daily by hundreds of undergraduates and prospective students.",
+    extra: "Technologies/Skills:",
+    body: "A part-time role involving designing, management and implementation of NUS Global Studies WordPress, visited daily by hundreds of undergraduates and prospective students.",
     skills: ["HTML", "CSS", "Javascript", "Wordpress"],
   },
   {
     // color: "rgb(33, 150, 243)",
-    title: "Automotive Cybersecurity Engineer",
+    title: "Automotive Cybersecurity Intern",
     subtitle: "Huawei",
     date: "Jan 2021 - June 2021",
-    extra: "Skills:",
+    extra: "Technologies/Skills:",
     body: "An internship where I developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
     skills: [
       "Computer Networks",
@@ -128,12 +152,11 @@ const experience = [
 
 const archiveProjects = [
   {
-    year: "NOW",
-    title: "ThriftyDrips eCommerce",
-    from: "Personal",
-    desc: "Currently still in development, a MERN eCommerce site for my personal business venture, Thrifty Drips. Since you're reading this, do give us a follow on Instagram at ",
-    link: "https://www.instagram.com/thriftydrips/",
-    tech: ["MongoDB", "Node.js", "React.js", "Express.js", "Redux"],
+    year: "2020",
+    title: "Learn it Like Beckham",
+    from: "NUS CS3244",
+    desc: "Learn in Like Beckham is a Machine Learning model that forecasts goal difference of football matches by utilising pre-match metrics. It can be used in various football applications such as data-based coaching or match fixing detection.Developed as a group project.",
+    tech: ["AI"],
   },
   {
     year: "2020",
