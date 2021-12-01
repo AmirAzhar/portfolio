@@ -71,6 +71,12 @@ function Blog() {
             className="iconify"
             onClick={() => visitPage("https://www.linkedin.com/in/amir-azhar/")}
           />
+          <Icon
+            icon="fa:github-alt"
+            color="black"
+            className="iconify"
+            onClick={() => visitPage("https://github.com/AmirAzhar")}
+          />
         </div>
       </div>
     </div>
