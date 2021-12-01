@@ -13,7 +13,9 @@ const About = () => {
           <div>
             <h1 className="aboutText">
               Hi! My name is{" "}
-              <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
+              <span
+                style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
+              >
                 Amir Azhar
               </span>{" "}
               and welcome to my personal website! I am a final year computer
@@ -25,7 +27,9 @@ const About = () => {
               <br />
               Today, I have a very strong interest in frontend web development.
               Despite not being enrolled in any web development modules in{" "}
-              <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
+              <span
+                style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
+              >
                 National University of Singapore (NUS),{" "}
               </span>
               I taught myself various skills and technologies, starting from
@@ -34,12 +38,16 @@ const About = () => {
               <br />
               <br />
               For the upcoming{" "}
-              <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
+              <span
+                style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
+              >
                 May 2022
               </span>
               , I will be graduating and hence am looking for{" "}
-              <span style={{ color: "#ff5aac", fontFamily: "Mont Reg" }}>
-                Frontend Engineer / Fullstack Developer Full-time Roles
+              <span
+                style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
+              >
+                Frontend / Fullstack Web Developer Full-time Roles
               </span>
               , where I can continue pursuing my passion in frontend development
               and set foot in the tech industry.

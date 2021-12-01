@@ -23,7 +23,7 @@
 }
 
 .aboutText {
-  font-family: var(--body-font);
+  font-family: var(--sub-header-font);
   color: var(--text-color);
   font-size: 20px;
   text-align: justify;
