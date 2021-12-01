@@ -36,11 +36,13 @@
 .post_title {
   font-family: var(--header-font);
   font-size: 30px;
+  line-height: 100%;
 }
 .post_desc {
   text-align: justify;
   font-size: 20px;
   font-family: var(--sub-header-font);
+  line-height: 130%;
 }
 
 .post_time,
