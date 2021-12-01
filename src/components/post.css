@@ -60,3 +60,33 @@
   font-size: 20px;
   margin: 3px 3px 7px 3px;
 }
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .post_title {
+    font-size: 25px;
+  }
+  .post_desc {
+    font-size: 15px;
+  }
+
+  .post_time,
+  .post_date {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .post_title {
+    font-size: 25px;
+  }
+  .post_desc {
+    font-size: 15px;
+  }
+
+  .post_time,
+  .post_date {
+    font-size: 15px;
+  }
+}
