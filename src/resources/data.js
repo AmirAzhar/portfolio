@@ -197,4 +197,48 @@ const archiveProjects = [
   },
 ];
 
-export { projects, experience, archiveProjects };
+const blog = [
+  {
+    type_of: "article",
+    id: 911803,
+    title: "Just Another (Average) Full Stack Web Project",
+    description:
+      "Table of Contents    Background Beginnings Tech Stack Initial Design Challenges Grand...",
+    readable_publish_date: "Dec 1",
+    slug: "just-another-average-full-stack-web-project-1d93",
+    path: "/amehpls/just-another-average-full-stack-web-project-1d93",
+    url: "https://dev.to/amehpls/just-another-average-full-stack-web-project-1d93",
+    comments_count: 0,
+    public_reactions_count: 0,
+    collection_id: null,
+    published_timestamp: "2021-12-01T05:26:41Z",
+    positive_reactions_count: 0,
+    cover_image:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--1hRBqvCI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3rw5czwghuylc3jrwmhg.png",
+    social_image:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--esgi-sjp--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3rw5czwghuylc3jrwmhg.png",
+    canonical_url:
+      "https://dev.to/amehpls/just-another-average-full-stack-web-project-1d93",
+    created_at: "2021-11-29T05:57:31Z",
+    edited_at: null,
+    crossposted_at: null,
+    published_at: "2021-12-01T05:26:41Z",
+    last_comment_at: "2021-12-01T05:26:41Z",
+    reading_time_minutes: 7,
+    tag_list: ["javascript", "webdev", "beginners", "react"],
+    tags: "javascript, webdev, beginners, react",
+    user: {
+      name: "Amir Azhar",
+      username: "amehpls",
+      twitter_username: null,
+      github_username: "AmirAzhar",
+      website_url: "https://amir-azhar.com",
+      profile_image:
+        "https://res.cloudinary.com/practicaldev/image/fetch/s--C9dzRkjO--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/764117/d81fae08-4e2f-41db-8353-6a0b1cebccbf.jpeg",
+      profile_image_90:
+        "https://res.cloudinary.com/practicaldev/image/fetch/s--sevArnhR--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/764117/d81fae08-4e2f-41db-8353-6a0b1cebccbf.jpeg",
+    },
+  },
+];
+
+export { projects, experience, archiveProjects, blog };

@@ -3,25 +3,27 @@ import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
 import Post from "../components/Post";
+import { blog } from "../resources/data";
 
 function Blog() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState(blog);
   const [msg, setMsg] = useState();
 
   function visitPage(link) {
     window.open(link);
   }
 
-  useEffect(() => {
-    fetch("https://dev.to/api/articles?username=amehpls")
-      .then((response) => response.json())
-      .then((data) => {
-        setPosts(data);
-        data.length > 0 ? setMsg(false) : setMsg(true);
-        console.log(msg);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://dev.to/api/articles?username=amehpls")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setPosts();
+  //       console.log(posts);
+  //       posts.length > 0 ? setMsg(false) : setMsg(true);
+  //       console.log(msg);
+  //     })
+  //     .catch((error) => console.log(error));
+  // }, []);
 
   return (
     <div className="content content_blog">
