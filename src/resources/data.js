@@ -82,7 +82,7 @@ const experience = [
     // color: "rgb(33, 150, 243)",
     title: "Software Engineer Intern",
     subtitle: "SolarAI Technologies",
-    date: "Dec 2021 - Present",
+    date: "Dec 2021 - Jun 2022",
     extra: "Technologies/Skills:",
     body: "A part-time internship where I work closely with our Engineering Lead to develop a cloud-based Minimum Viable Product from the ground up. Design, development, and implementation of web application. Assist with the creation of a full system pipeline and architecture.",
     skills: [
@@ -98,7 +98,7 @@ const experience = [
     // color: "rgb(33, 150, 243)",
     title: "WordPress Developer",
     subtitle: "National University of Singapore",
-    date: "Sep 2021 - Present",
+    date: "Sep 2021 - May 2022",
     extra: "Technologies/Skills:",
     body: "A part-time role involving designing, management and implementation of NUS Global Studies WordPress, visited daily by hundreds of undergraduates and prospective students.",
     skills: ["HTML", "CSS", "Javascript", "Wordpress"],
@@ -107,7 +107,7 @@ const experience = [
     // color: "rgb(33, 150, 243)",
     title: "Automotive Cybersecurity Intern",
     subtitle: "Huawei",
-    date: "Jan 2021 - June 2021",
+    date: "Jan 2021 - Jun 2021",
     extra: "Technologies/Skills:",
     body: "An internship where I developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
     skills: [
@@ -129,7 +129,7 @@ const experience = [
   {
     title: "BEng Computer Engineering",
     subtitle: "National University of Singapore",
-    date: "Aug 2018 - Present",
+    date: "Aug 2018 - May 2022",
     extra: "Notable Modules:",
     body: "Undergraduate in National University of Singapore (NUS), pursuing a Bachelor of Engineering in Computer Engineering (with Honours).",
     skills: [
