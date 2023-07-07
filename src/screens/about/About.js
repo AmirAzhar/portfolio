@@ -18,39 +18,30 @@ const About = () => {
               >
                 Amir Azhar
               </span>{" "}
-              and welcome to my personal website! I am a final year computer
-              engineering undergraduate, and my interest in web development
-              began back in 2019. It all started when I wanted to create a
-              website as a virtual gift for my girlfriend during the Covid-19
-              lockdown!
+              and welcome to my personal website! I am a Software Engineer who
+              loves web development, starting from back in 2019. It all started
+              when I wanted to create a website as a virtual gift for my
+              girlfriend (now fiancée!) during the Covid-19 lockdown!
               <br />
-              <br />
-              Today, I have a very strong interest in frontend web development.
+              <br />I have a very strong interest in frontend web development.
               Despite not being enrolled in any web development modules in{" "}
               <span
                 style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
               >
                 National University of Singapore (NUS),{" "}
               </span>
-              I taught myself various skills and technologies, starting from
-              plain CSS/HTML/Javascript, to now utilising tech stacks such as
-              MERN.
+              I taught myself various skills and tools, starting from plain
+              CSS/HTML/Javascript, to now being proficient in industry prominent
+              technologies such as React, Next.js, Angular and many more!
               <br />
-              <br />
-              For the upcoming{" "}
+              <br />I am now employed full-time as a Software Engineer at{" "}
               <span
                 style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
               >
-                May 2022
+                VISA Singapore,{" "}
               </span>
-              , I will be graduating and hence am looking for{" "}
-              <span
-                style={{ color: "#ff5aac", fontFamily: "var(--header-font)" }}
-              >
-                Frontend / Fullstack Web Developer Full-time Roles
-              </span>
-              , where I can continue pursuing my passion in frontend development
-              and set foot in the tech industry.
+              but I am continuously looking out for more opportunities to grow
+              and develop myself into a "T-shaped" individual!
             </h1>
           </div>
           <div>
