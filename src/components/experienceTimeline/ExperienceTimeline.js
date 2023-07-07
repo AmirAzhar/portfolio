@@ -1,24 +1,32 @@
+// Styles
+import "react-vertical-timeline-component/style.min.css";
 import "./experienceTimeline.css";
 
-// Import utilities
+// Packages
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+
+// Boostrap
 import { Row } from "react-bootstrap";
+
+// Icons
 import { MdWork } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
 
-//Import components
-import { experience } from "../../resources/data";
+// Components
 import Tags from "../tags";
 
+// Hooks
+import useGetFirebase from "../../hooks/useGetFirebase";
+
 const ExperienceTimeline = () => {
+  const [experienceData] = useGetFirebase("experience");
   return (
     <div>
       <VerticalTimeline>
-        {experience.map((exp) => (
+        {experienceData.value.map((exp) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#112240", color: "#d9e2ec" }}

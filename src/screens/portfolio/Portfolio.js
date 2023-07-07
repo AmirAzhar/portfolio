@@ -23,7 +23,7 @@ const Portfolio = () => {
 
   return (
     <div className="content">
-      <div className=" header"> Past Projects </div>
+      <div className="header"> Past Projects </div>
 
       <div className="projectGrid">
         {projects.map((proj) => (

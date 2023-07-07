@@ -1,12 +1,19 @@
+// Bootstrap
+import { Accordion, Card, Button, Table } from "react-bootstrap";
+
+// Styles
 import "./projectAccordian.css";
 
-import { Accordion, Card, Button, Table } from "react-bootstrap";
-import { archiveProjects } from "../../resources/data";
+// Components
 import Tags from "../tags";
+
+// Hooks
+import useGetFirebase from "../../hooks/useGetFirebase";
 
 import { useState } from "react";
 const ProjectAccordion = () => {
   const [toggle, setToggle] = useState(1);
+  const [archiveProjectsData] = useGetFirebase("archiveProjects");
 
   const handleClick = () => {
     setToggle(!toggle);
@@ -39,7 +46,7 @@ const ProjectAccordion = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {archiveProjects.map((proj) => (
+                  {archiveProjectsData.value.map((proj) => (
                     <tr>
                       <td className="tdyear">{proj.year}</td>
                       <td className="tdtitle">{proj.title}</td>
