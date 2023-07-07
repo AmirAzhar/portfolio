@@ -54,7 +54,7 @@ const About = () => {
             </h1>
           </div>
           <div>
-            <img className="aboutImg" src={myPic}></img>
+            <img className="aboutImg" src={myPic} alt="Amir Azhar" />
           </div>
         </div>
       </div>

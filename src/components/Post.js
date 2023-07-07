@@ -7,7 +7,7 @@ function Post({ title, desc, date, time, link, image }) {
   }
   return (
     <div className="post" onClick={visitPost}>
-      <img src={image} className="post_image" />
+      <img src={image} className="post_image" alt={`${title}`} />
       <div className="post_title">{title}</div>
       <div className="post_desc">{desc}</div>
       <div className="post_info">

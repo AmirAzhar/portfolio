@@ -3,32 +3,32 @@ import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
 import Post from "../components/Post";
-import { blog } from "../resources/data";
+import getDevArticles from "../services/getDevArticles";
 
 function Blog() {
-  const [posts, setPosts] = useState(blog);
-  const [msg, setMsg] = useState();
+  const [posts, setPosts] = useState([]);
+  const [noPosts, setNoPosts] = useState(false);
 
   function visitPage(link) {
     window.open(link);
   }
-  // FIXME: Fetch API not working as intended
-  // useEffect(() => {
-  //   fetch("https://dev.to/api/articles?username=amehpls")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setPosts();
-  //       console.log(posts);
-  //       posts.length > 0 ? setMsg(false) : setMsg(true);
-  //       console.log(msg);
-  //     })
-  //     .catch((error) => console.log(error));
-  // }, []);
+
+  useEffect(() => {
+    getDevArticles()
+      .then((data) => {
+        setPosts(data);
+        posts.length > 0 ? setNoPosts(false) : setNoPosts(true);
+      })
+      .catch(() => {
+        setPosts([]);
+        setNoPosts("true");
+      });
+  }, [posts.length]);
 
   return (
     <div className="content content_blog">
       <div>
-        {!msg ? (
+        {!noPosts ? (
           <div className="posts_wrapper">
             {posts.map((post) => (
               <Post
