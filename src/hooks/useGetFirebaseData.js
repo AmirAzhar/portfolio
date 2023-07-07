@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 // Services
-import getFirebase from "../services/getFirebase";
+import getFirebaseData from "../services/getFirebaseData";
 
-function useGetFirebase(collectionName) {
+function useGetFirebaseData(collectionName) {
   const [data, setData] = useState({ value: [] });
   useEffect(() => {
-    getFirebase(collectionName)
+    getFirebaseData(collectionName)
       .then((snapshot) => {
         if (snapshot.exists()) setData({ value: snapshot.val() });
         else setData({ value: [] });
@@ -19,4 +19,4 @@ function useGetFirebase(collectionName) {
   return [data];
 }
 
-export default useGetFirebase;
+export default useGetFirebaseData;

@@ -19,10 +19,10 @@ import { GiGraduateCap } from "react-icons/gi";
 import Tags from "../tags";
 
 // Hooks
-import useGetFirebase from "../../hooks/useGetFirebase";
+import useGetFirebaseData from "../../hooks/useGetFirebaseData";
 
 const ExperienceTimeline = () => {
-  const [experienceData] = useGetFirebase("experience");
+  const [experienceData] = useGetFirebaseData("experience");
   return (
     <div>
       <VerticalTimeline>

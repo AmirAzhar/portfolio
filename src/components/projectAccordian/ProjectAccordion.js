@@ -8,12 +8,12 @@ import "./projectAccordian.css";
 import Tags from "../tags";
 
 // Hooks
-import useGetFirebase from "../../hooks/useGetFirebase";
+import useGetFirebaseData from "../../hooks/useGetFirebaseData";
 
 import { useState } from "react";
 const ProjectAccordion = () => {
   const [toggle, setToggle] = useState(1);
-  const [archiveProjectsData] = useGetFirebase("archiveProjects");
+  const [archiveProjectsData] = useGetFirebaseData("archiveProjects");
 
   const handleClick = () => {
     setToggle(!toggle);

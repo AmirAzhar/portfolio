@@ -1,19 +1,24 @@
-import "./navigation.css";
-
 import { useState } from "react";
 
-import cv from "../../resources/cv.pdf";
+// Styles
+import "./navigation.css";
 
+// Icons
 import { IoIosContact } from "react-icons/io";
 import { VscFilePdf } from "react-icons/vsc";
 import { BsBriefcase } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
 import { BiNews } from "react-icons/bi";
 
+// Packages
 import { elastic as Menu } from "react-burger-menu";
+
+// Hooks
+import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
 
 const Navigation = () => {
   const [screen] = useState(window.location.pathname);
+  const [cv] = useGetFirebaseItem("portfolio/cv.pdf");
 
   return (
     <Menu>
