@@ -1,34 +1,22 @@
+// Styles
 import "./blog.css";
-import { useState, useEffect } from "react";
+
+// Icons
 import { Icon } from "@iconify/react";
 
+// Components
 import Post from "../../components/post";
-import getDevArticles from "../../services/getDevArticles";
+
+// Hooks
+import useGetDevArticles from "../../hooks/useGetDevArticles";
 
 function Blog() {
-  const [posts, setPosts] = useState([]);
-  const [noPosts, setNoPosts] = useState(false);
-
-  function visitPage(link) {
-    window.open(link);
-  }
-
-  useEffect(() => {
-    getDevArticles()
-      .then((data) => {
-        setPosts(data);
-        posts.length > 0 ? setNoPosts(false) : setNoPosts(true);
-      })
-      .catch(() => {
-        setPosts([]);
-        setNoPosts("true");
-      });
-  }, [posts.length]);
+  const [posts] = useGetDevArticles();
 
   return (
     <div className="content content_blog">
       <div>
-        {!noPosts ? (
+        {posts.length ? (
           <div className="posts_wrapper">
             {posts.map((post) => (
               <Post
@@ -56,26 +44,28 @@ function Blog() {
             color="white"
             className="iconify"
             onClick={() =>
-              visitPage("https://stackoverflow.com/users/17525800/amehpls")
+              window.open("https://stackoverflow.com/users/17525800/amehpls")
             }
           />
           <Icon
             icon="cib:leetcode"
             color="white"
             className="iconify"
-            onClick={() => visitPage("https://leetcode.com/AmehPls/")}
+            onClick={() => window.open("https://leetcode.com/AmehPls/")}
           />
           <Icon
             icon="logos:linkedin-icon"
             color="white"
             className="iconify"
-            onClick={() => visitPage("https://www.linkedin.com/in/amir-azhar/")}
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/amir-azhar/")
+            }
           />
           <Icon
             icon="fa:github-alt"
             color="black"
             className="iconify"
-            onClick={() => visitPage("https://github.com/AmirAzhar")}
+            onClick={() => window.open("https://github.com/AmirAzhar")}
           />
         </div>
       </div>
