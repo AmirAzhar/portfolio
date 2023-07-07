@@ -2,7 +2,7 @@ import "./projectmodal.css";
 
 import { Modal } from "react-bootstrap";
 
-import ProjectCarousel from "./ProjectCarousel";
+import ProjectCarousel from "../projectCarousel";
 
 const ProjectModal = ({ content, onHide, show }) => {
   return (

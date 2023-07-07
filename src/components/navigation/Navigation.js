@@ -2,7 +2,7 @@ import "./navigation.css";
 
 import { useState } from "react";
 
-import cv from "../resources/cv.pdf";
+import cv from "../../resources/cv.pdf";
 
 import { IoIosContact } from "react-icons/io";
 import { VscFilePdf } from "react-icons/vsc";

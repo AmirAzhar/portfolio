@@ -9,15 +9,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Scrollbar } from "react-scrollbars-custom";
 
 // Import components
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 
 // Import screens
-import Contact from "./screens/Contact";
-import About from "./screens/About";
-import Portfolio from "./screens/Portfolio";
-import Blog from "./screens/Blog";
-// import Home from "./screens/Home"; *TO IMPLEMENT HOMEPAGE*
+import About from "./screens/about";
+import Blog from "./screens/blog";
+import Contact from "./screens/contact";
+import Portfolio from "./screens/portfolio";
 
 function App() {
   return (

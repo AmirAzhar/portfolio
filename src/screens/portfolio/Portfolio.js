@@ -5,12 +5,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 //Import components
-import ProjectModal from "../components/ProjectModal";
-import ExperienceTimeline from "../components/ExperienceTimeline";
-import ProjectAccordion from "../components/ProjectAccordion";
-import { projects } from "../resources/data";
+import ProjectModal from "../../components/projectModal";
+import ExperienceTimeline from "../../components/experienceTimeline";
+import ProjectAccordion from "../../components/projectAccordian";
+import { projects } from "../../resources/data";
 
-const Experience = () => {
+const Portfolio = () => {
   const [modalShow, setModalShow] = useState(false);
   const [state, setState] = useState({
     title: "",
@@ -55,4 +55,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Portfolio;

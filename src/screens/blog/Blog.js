@@ -2,8 +2,8 @@ import "./blog.css";
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
-import Post from "../components/Post";
-import getDevArticles from "../services/getDevArticles";
+import Post from "../../components/post";
+import getDevArticles from "../../services/getDevArticles";
 
 function Blog() {
   const [posts, setPosts] = useState([]);

@@ -1,4 +1,4 @@
-import "./experiencetimeline.css";
+import "./experienceTimeline.css";
 
 // Import utilities
 import {
@@ -11,8 +11,8 @@ import { MdWork } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
 
 //Import components
-import { experience } from "../resources/data";
-import Tags from "./Tags";
+import { experience } from "../../resources/data";
+import Tags from "../tags";
 
 const ExperienceTimeline = () => {
   return (

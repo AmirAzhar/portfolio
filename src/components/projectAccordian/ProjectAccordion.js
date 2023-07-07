@@ -1,8 +1,8 @@
-import "./projectaccordian.css";
+import "./projectAccordian.css";
 
 import { Accordion, Card, Button, Table } from "react-bootstrap";
-import { archiveProjects } from "../resources/data";
-import Tags from "./Tags";
+import { archiveProjects } from "../../resources/data";
+import Tags from "../tags";
 
 import { useState } from "react";
 const ProjectAccordion = () => {
