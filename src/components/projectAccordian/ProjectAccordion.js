@@ -12,26 +12,21 @@ import useGetFirebaseData from "../../hooks/useGetFirebaseData";
 
 import { useState } from "react";
 const ProjectAccordion = () => {
-  const [toggle, setToggle] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
   const [archiveProjectsData] = useGetFirebaseData("archiveProjects");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-    console.log(toggle);
-  };
 
   return (
     <div className="acc">
       <Accordion defaultActiveKey="1">
         <Card className="accCard">
           <Accordion.Toggle
-            className={toggle ? "accBtn" : "accBtnActive"}
+            className={isOpen ? "accBtnActive" : "accBtn"}
             as={Button}
             variant="link"
             eventKey="0"
-            onClick={handleClick}
+            onClick={() => setIsOpen(!isOpen)}
           >
-            {toggle ? "More Projects" : "Close Projects"}
+            {isOpen ? "Close Projects" : "More Projects"}
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="accContent">

@@ -11,7 +11,6 @@ import useGetFirebaseData from "../../hooks/useGetFirebaseData";
 
 const Portfolio = () => {
   const [projectsData] = useGetFirebaseData("projects");
-  console.log(projectsData.value);
   return (
     <div className="content">
       <div className="header">Past Projects</div>
