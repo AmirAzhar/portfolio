@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 // Services
 import getFirebaseItem from "../services/getFirebaseItem";
 
-function useGetFirebaseItem(itemName) {
-  const [url, setUrl] = useState("");
+function useGetFirebaseItem(itemList) {
+  const [urlList, setUrlList] = useState([]);
   useEffect(() => {
-    getFirebaseItem(itemName)
-      .then((urlRes) => setUrl(urlRes))
+    Promise.all(itemList.map((item) => getFirebaseItem(item)))
+      .then((res) => setUrlList(res))
       .catch((error) => {
         console.error(error);
-        setUrl("");
+        setUrlList([""]);
       });
-  });
-  return [url];
+  }, []);
+  return [urlList];
 }
 
 export default useGetFirebaseItem;

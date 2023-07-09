@@ -1,5 +1,7 @@
+// Styles
 import "./projectCarousel.css";
 
+// Packages
 import { Carousel } from "react-bootstrap";
 
 const ProjectCarousel = ({ contentImages }) => {
@@ -7,16 +9,16 @@ const ProjectCarousel = ({ contentImages }) => {
     <Carousel>
       {contentImages.map((cont) => (
         <Carousel.Item>
-          {cont.link.split(".").pop() === "gif" ? (
+          {cont.url.split(".").pop() === "gif" ? (
             <img
               className="d-block mx-auto carouVid"
-              src={cont.link}
+              src={cont.url}
               alt={`${contentImages.title}`}
             />
           ) : (
             <img
               className="d-block mx-auto carouImage"
-              src={cont.link}
+              src={cont.url}
               alt={`${contentImages.title}`}
             />
           )}

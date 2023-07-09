@@ -18,7 +18,7 @@ import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
 
 const Navigation = () => {
   const [screen] = useState(window.location.pathname);
-  const [cv] = useGetFirebaseItem("portfolio/cv.pdf");
+  const [urlList] = useGetFirebaseItem(["portfolio/cv.pdf"]);
 
   return (
     <Menu>
@@ -59,7 +59,7 @@ const Navigation = () => {
       <a
         id="cv"
         className="menu-item"
-        href={cv}
+        href={urlList[0]}
         target="_blank"
         rel="noreferrer"
       >

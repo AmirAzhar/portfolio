@@ -15,7 +15,7 @@ function useGetFirebaseData(collectionName) {
         console.error(error);
         setData({ value: [] });
       });
-  }, [collectionName]);
+  }, []);
   return [data];
 }
 

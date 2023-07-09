@@ -5,7 +5,7 @@ import "./about.css";
 import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
 
 const About = () => {
-  const [image_me] = useGetFirebaseItem("portfolio/images/me.jpg");
+  const [urlList] = useGetFirebaseItem(["portfolio/images/me.jpg"]);
   return (
     <div className="content">
       <div className="aboutContent">
@@ -25,7 +25,7 @@ const About = () => {
               <br />I have a very strong interest in frontend web development.
               Despite not being enrolled in any web development modules in{" "}
               <span className="hightlightedText">
-                National University of Singapore (NUS),
+                National University of Singapore (NUS),{" "}
               </span>
               I taught myself various skills and tools, starting from plain
               CSS/HTML/Javascript, to now being proficient in industry prominent
@@ -38,7 +38,7 @@ const About = () => {
             </h1>
           </div>
           <div>
-            <img className="aboutImg" src={image_me} alt="Amir Azhar" />
+            <img className="aboutImg" src={urlList[0]} alt="Amir Azhar" />
           </div>
         </div>
       </div>

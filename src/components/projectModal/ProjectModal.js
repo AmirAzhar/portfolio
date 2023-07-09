@@ -12,14 +12,25 @@ import ProjectCarousel from "../projectCarousel";
 // Icons
 import { IoIosClose } from "react-icons/io";
 
+// Hooks
+import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
+
 const ProjectModal = ({ content }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [urlList] = useGetFirebaseItem(content.contentImages);
+
+  function transformDataForCarousel(data) {
+    return data.map((url, id) => ({
+      id,
+      url,
+    }));
+  }
 
   return (
     <>
       <img
         className="projectThumbnail"
-        src={content.thumbnail}
+        src={urlList[0]}
         alt={content.alt}
         onClick={() => {
           setIsModalOpen(true);
@@ -31,7 +42,9 @@ const ProjectModal = ({ content }) => {
             className="closeModalButton"
             onClick={() => setIsModalOpen(false)}
           />
-          <ProjectCarousel contentImages={content.contentImages} />
+          <ProjectCarousel
+            contentImages={transformDataForCarousel(urlList.slice(1))}
+          />
           <h3 className="projectTitle">{content.title}</h3>
           <h5 className="projectSubtitle">{content.subtitle}</h5>
           <h6 className="projectBody1">{content.body1}</h6>
