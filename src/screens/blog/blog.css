@@ -57,6 +57,9 @@
   opacity: 1;
   transform: scale(1.1);
 }
+.blogGrid {
+  padding-top: 1rem;
+}
 
 /* Tablet */
 @media screen and (max-width: 768px) {

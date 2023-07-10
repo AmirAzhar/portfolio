@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 // Styles
 import "./navigation.css";
 
@@ -16,8 +14,7 @@ import { elastic as Menu } from "react-burger-menu";
 // Hooks
 import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
 
-const Navigation = () => {
-  const [screen] = useState(window.location.pathname);
+const Navigation = ({ screen }) => {
   const [urlList] = useGetFirebaseItem(["portfolio/cv.pdf"]);
 
   return (

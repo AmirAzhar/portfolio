@@ -15,7 +15,10 @@ function Blog() {
 
   return (
     <div className="content content_blog">
-      <div>
+      <div className="header" style={{ marginBottom: "5px" }}>
+        Blog
+      </div>
+      <div className="blogGrid">
         {posts.length ? (
           <div className="posts_wrapper">
             {posts.map((post) => (

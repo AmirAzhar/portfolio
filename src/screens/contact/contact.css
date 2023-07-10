@@ -6,6 +6,13 @@
   margin-top: 30vh;
 }
 
+.contactLineSpa {
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 50px;
+  justify-content: center;
+}
+
 .Typist {
   text-align: center !important;
   justify-content: center;

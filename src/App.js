@@ -1,8 +1,4 @@
-/*
- * FILE DESCRIPTION
- * Root app component
- *
- */
+import { useState } from "react";
 
 // Import utilities
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,8 +13,10 @@ import About from "./screens/about";
 import Blog from "./screens/blog";
 import Contact from "./screens/contact";
 import Portfolio from "./screens/portfolio";
+import Spa from "./screens/spa";
 
 function App() {
+  const [screen] = useState(window.location.pathname);
   return (
     <div>
       <Scrollbar
@@ -31,8 +29,9 @@ function App() {
       >
         <Router>
           <div className="pageContainer">
-            <Navigation />
+            {screen === "/spa" ? null : <Navigation screen={screen} />}
             <Switch>
+              <Route path="/spa" component={Spa} />
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
               <Route path="/home" component={About} />

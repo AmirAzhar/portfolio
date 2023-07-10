@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./contact.css";
 
 import { Row } from "react-bootstrap";
@@ -5,11 +7,12 @@ import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 
 const Contact = () => {
+  const [screen] = useState(window.location.pathname);
   return (
     <div className="content">
       <div className="contactContent">
         <Row className="justify-content-md-center">
-          <h1 className="contactLine">
+          <h1 className={screen === "/spa" ? "contactLineSpa" : "contactLine"}>
             <Typist blink="True">
               <span>Want to </span>
               <br />
