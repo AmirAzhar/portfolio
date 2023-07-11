@@ -16,7 +16,6 @@ import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
 
 const Navigation = ({ screen }) => {
   const [urlList] = useGetFirebaseItem(["portfolio/cv.pdf"]);
-
   return (
     <Menu>
       <a
