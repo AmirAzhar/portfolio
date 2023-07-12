@@ -15,6 +15,11 @@ import Contact from "./screens/contact";
 import Portfolio from "./screens/portfolio";
 import Spa from "./screens/spa";
 
+// Icons
+import { AiFillEye } from "react-icons/ai";
+
+import { RiArrowGoBackFill } from "react-icons/ri";
+
 function App() {
   const [screen] = useState(window.location.pathname);
   return (
@@ -42,6 +47,16 @@ function App() {
           </div>
         </Router>
       </Scrollbar>
+      <a
+        className={screen === "/spa" ? "changeToOri" : "changeToSpa"}
+        href={screen === "/spa" ? "/" : "/spa"}
+      >
+        {screen === "/spa" ? (
+          <RiArrowGoBackFill size={"1.5rem"} />
+        ) : (
+          <AiFillEye size={"1.5rem"} />
+        )}
+      </a>
     </div>
   );
 }
