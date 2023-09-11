@@ -18,7 +18,7 @@ function useGetFirebaseCollection(collectionName) {
         setData([]);
       })
       .finally(() => setLoading(false));
-  }, [collectionName]);
+  }, []);
   return [data, loading];
 }
 

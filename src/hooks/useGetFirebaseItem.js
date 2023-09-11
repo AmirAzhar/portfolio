@@ -15,7 +15,7 @@ function useGetFirebaseItem(itemList) {
         setUrlList([""]);
       })
       .finally(() => setLoading(false));
-  }, [itemList]);
+  }, []);
   return [urlList, loading];
 }
 
