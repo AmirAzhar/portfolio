@@ -7,15 +7,15 @@ import ExperienceTimeline from "../../components/experienceTimeline";
 import ProjectAccordion from "../../components/projectAccordian";
 
 // Hooks
-import useGetFirebaseData from "../../hooks/useGetFirebaseData";
+import useGetFirebaseCollection from "../../hooks/useGetFirebaseCollection";
 
 const Portfolio = () => {
-  const [projectsData] = useGetFirebaseData("projects");
+  const [projectsData] = useGetFirebaseCollection("projects");
   return (
     <div className="content">
       <div className="header">Past Projects</div>
       <div className="projectGrid">
-        {projectsData.value.map((proj) => (
+        {projectsData.map((proj) => (
           <ProjectModal content={proj} />
         ))}
       </div>

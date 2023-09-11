@@ -8,12 +8,12 @@ import "./projectAccordian.css";
 import Tags from "../tags";
 
 // Hooks
-import useGetFirebaseData from "../../hooks/useGetFirebaseData";
+import useGetFirebaseCollection from "../../hooks/useGetFirebaseCollection";
 
 import { useState } from "react";
 const ProjectAccordion = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [archiveProjectsData] = useGetFirebaseData("archiveProjects");
+  const [archiveProjectsData] = useGetFirebaseCollection("archiveProjects");
 
   return (
     <div className="acc">
@@ -41,7 +41,7 @@ const ProjectAccordion = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {archiveProjectsData.value.map((proj) => (
+                  {archiveProjectsData.map((proj) => (
                     <tr>
                       <td className="tdyear">{proj.year}</td>
                       <td className="tdtitle">{proj.title}</td>

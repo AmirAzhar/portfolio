@@ -19,14 +19,14 @@ import { GiGraduateCap } from "react-icons/gi";
 import Tags from "../tags";
 
 // Hooks
-import useGetFirebaseData from "../../hooks/useGetFirebaseData";
+import useGetFirebaseCollection from "../../hooks/useGetFirebaseCollection";
 
 const ExperienceTimeline = () => {
-  const [experienceData] = useGetFirebaseData("experience");
+  const [experienceData] = useGetFirebaseCollection("experience");
   return (
     <div>
       <VerticalTimeline>
-        {experienceData.value.map((exp) => (
+        {experienceData.map((exp) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#112240", color: "#d9e2ec" }}

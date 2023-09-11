@@ -1,5 +1,4 @@
-export default function getDevArticles() {
-  return fetch("https://dev.to/api/articles?username=amehpls").then(
-    (response) => response.json()
-  );
+export default async function getDevArticles() {
+  const res = await fetch("https://dev.to/api/articles?username=amehpls");
+  return res.json();
 }
