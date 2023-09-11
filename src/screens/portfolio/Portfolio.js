@@ -5,6 +5,7 @@ import "./portfolio.css";
 import ProjectModal from "../../components/projectModal";
 import ExperienceTimeline from "../../components/experienceTimeline";
 import ProjectAccordion from "../../components/projectAccordian";
+import Loader from "../../components/loader";
 
 // Hooks
 import useGetFirebaseCollection from "../../hooks/useGetFirebaseCollection";

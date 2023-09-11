@@ -6,39 +6,44 @@ import { Icon } from "@iconify/react";
 
 // Components
 import Post from "../../components/post";
+import Loader from "../../components/loader";
 
 // Hooks
 import useGetDevArticles from "../../hooks/useGetDevArticles";
 
 function Blog() {
-  const [posts] = useGetDevArticles();
+  const [posts, loading] = useGetDevArticles();
 
   return (
     <div className="content content_blog">
       <div className="header" style={{ marginBottom: "5px" }}>
         Blog
       </div>
-      <div className="blogGrid">
-        {posts.length ? (
-          <div className="posts_wrapper">
-            {posts.map((post) => (
-              <Post
-                image={post.cover_image}
-                title={post.title}
-                desc={post.description}
-                date={post.readable_publish_date}
-                time={post.reading_time_minutes}
-                link={post.canonical_url}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="no_post_msg">
-            <div className="msg_header">OOPS!</div>
-            <div className="msg_itself">There are no recent posts!</div>
-          </div>
-        )}
-      </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="blogGrid">
+          {posts.length ? (
+            <div className="posts_wrapper">
+              {posts.map((post) => (
+                <Post
+                  image={post.cover_image}
+                  title={post.title}
+                  desc={post.description}
+                  date={post.readable_publish_date}
+                  time={post.reading_time_minutes}
+                  link={post.canonical_url}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="no_post_msg">
+              <div className="msg_header">OOPS!</div>
+              <div className="msg_itself">There are no recent posts!</div>
+            </div>
+          )}
+        </div>
+      )}
       <div className="community">
         Check out my other community contributions!
         <div className="socials_container">

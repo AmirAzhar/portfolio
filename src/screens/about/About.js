@@ -4,14 +4,18 @@ import "./about.css";
 // Hooks
 import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
 
+// Components
+import Loader from "../../components/loader";
+
 const About = () => {
-  const [urlList] = useGetFirebaseItem(["portfolio/images/me.jpg"]);
+  const [urlList, loading] = useGetFirebaseItem(["portfolio/images/me.jpg"]);
   return (
     <div className="content">
       <div className="aboutContent">
         <div className="header" style={{ marginBottom: "5px" }}>
           About Me
         </div>
+
         <div className="aboutGrid">
           <div>
             <h1 className="aboutText">
@@ -37,9 +41,13 @@ const About = () => {
               and develop myself into a "T-shaped" individual!
             </h1>
           </div>
-          <div>
-            <img className="aboutImg" src={urlList[0]} alt="Amir Azhar" />
-          </div>
+          {loading ? (
+            <Loader />
+          ) : (
+            <div>
+              <img className="aboutImg" src={urlList[0]} alt="Amir Azhar" />
+            </div>
+          )}
         </div>
       </div>
     </div>

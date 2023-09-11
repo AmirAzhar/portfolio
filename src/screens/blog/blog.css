@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .no_post_msg {
@@ -56,9 +57,6 @@
 .iconify:hover {
   opacity: 1;
   transform: scale(1.1);
-}
-.blogGrid {
-  padding-top: 1rem;
 }
 
 /* Tablet */

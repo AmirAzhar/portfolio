@@ -1,3 +1,9 @@
+.experienceTimeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .vertical-timeline-element-icon {
   border-color: var(--accent-color) !important;
 }
