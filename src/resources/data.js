@@ -17,6 +17,80 @@ import alexThumbnail from "./images/alex.png";
 import alex1 from "./images/A1.gif";
 import alex2 from "./images/A2.gif";
 
+const experience = [
+  {
+    body: "A frontend developer in a release engineering team - (1) building web tools to speed deployment processes and keep track of related metrics, (2) whilst assisting in ensuring non-prod environments are readily available for certification and remediating any possible faults in these environments",
+    date: "Aug 2022 - Present",
+    extra: "Technologies/Skills:",
+    skills: [
+      "Next.js",
+      "React",
+      "Angular",
+      "Nodejs",
+      "Jenkins",
+      "Kubernetes",
+      "Linux",
+    ],
+    subtitle: "VISA Singapore",
+    title: "Software Engineer",
+  },
+  {
+    body: "A part-time internship where I work closely with our Engineering Lead to develop a cloud-based Minimum Viable Product from the ground up. Design, development, and implementation of web application. Assist with the creation of a full system pipeline and architecture.",
+    date: "Dec 2021 - Jun 2022",
+    extra: "Technologies/Skills:",
+    skills: [
+      "Next.js",
+      "React",
+      "Severless",
+      "Jest",
+      "DynamoDB",
+      "Elasticsearch",
+    ],
+    subtitle: "Solar AI Technologies",
+    title: "Software Engineer Intern",
+  },
+  {
+    body: "A part-time role involving designing, management and implementation of NUS Global Studies WordPress, visited daily by hundreds of undergraduates and prospective students.",
+    date: "Sep 2021 - May 2022",
+    extra: "Technologies/Skills:",
+    skills: ["HTML", "CSS", "Javascript", "Wordpress"],
+    subtitle: "National University of Singapore",
+    title: "WordPress Developer",
+  },
+  {
+    body: "An internship where I developed Rule-based Network Intrusion Detection System (NIDS) for connected and autonomous cars and implementation of IDS onto microcontrollers, using libraries such as FreeRTOS.",
+    date: "Jan 2021 - Jun 2021",
+    extra: "Technologies/Skills:",
+    skills: [
+      "Computer Networks",
+      "Information Security",
+      "Security and Protection",
+      "Network Monitoring",
+      "Machine Learning",
+      "Embedded Systems",
+      "Real-Time Operating Systems",
+    ],
+    subtitle: "Huawei",
+    title: "Automotive Cybersecurity Intern",
+  },
+  {
+    body: "Undergraduate in National University of Singapore (NUS), pursuing a Bachelor of Engineering in Computer Engineering (with Honours).",
+    date: "Aug 2018 - May 2022",
+    extra: "Notable Modules:",
+    skills: [
+      "Real-Time Operating Systems (RTOS)",
+      "Database Systems",
+      "Computer Networks",
+      "Information Security",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Object Oriented Programming (OOP)",
+    ],
+    subtitle: "National University of Singapore",
+    title: "BEng Computer Engineering",
+  },
+];
+
 const projects = [
   {
     title: "DanceDance Dashboard",
@@ -77,4 +151,51 @@ const projects = [
   },
 ];
 
-export { projects };
+const archiveProjects = [
+  {
+    desc: "Learn in Like Beckham is a Machine Learning model that forecasts goal difference of football matches by utilising pre-match metrics. It can be used in various football applications such as data-based coaching or match fixing detection.Developed as a group project.",
+    from: "NUS CS3244",
+    tech: ["AI"],
+    title: "Learn it Like Beckham",
+    year: "2020",
+  },
+  {
+    desc: "A web based database application for a pet caring service. Application allows pet owners to search for care takers, for their pets. Developed as a group project. Project can be found on github at ",
+    from: "NUS CS2102",
+    link: "https://github.com/CareYourPets/CS2102_2021_S1_Team9",
+    tech: ["PostgreSQL", "Node.js", "React.js"],
+    title: "CareYourPets",
+    year: "2020",
+  },
+  {
+    desc: "Solving N-puzzles by utilising simple search algorithms such as BFS, UCS and A*. Developed as a group project.",
+    from: "NUS CS3243",
+    tech: ["AI"],
+    title: "AI N-Puzzle Solver",
+    year: "2020",
+  },
+  {
+    desc: "Solving Sudoku as a constraint satisfaction problem, utilising backtracking search with variable/value ordering heuristics and inference mechanisms. Developed as a group project.",
+    from: "NUS CS3243",
+    tech: ["AI"],
+    title: "AI Sudoku Solver",
+    year: "2020",
+  },
+  {
+    desc: "Solving the classic Pacman game using reinforcement learning concepts, specifically Q-learing agents. Developed as a group project.",
+    from: "NUS CS3243",
+    tech: ["AI"],
+    title: "AI Pacman Solver",
+    year: "2020",
+  },
+  {
+    desc: "Personal portfolio made with pure HTML/CSS/JS. Have definitely made significance improvement since then. Can be found at ",
+    from: "Personal",
+    link: "https://amirazhar.github.io/Portfolio-v1.0/",
+    tech: ["HTML", "CSS", "Bootstrap", "JS"],
+    title: "Personal Portfolio v1.0",
+    year: "2019",
+  },
+];
+
+export { experience, projects, archiveProjects };

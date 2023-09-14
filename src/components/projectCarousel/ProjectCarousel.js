@@ -9,16 +9,16 @@ const ProjectCarousel = ({ contentImages }) => {
     <Carousel>
       {contentImages.map((cont) => (
         <Carousel.Item>
-          {cont.url.split(".").pop() === "gif" ? (
+          {cont.link.split(".").pop() === "gif" ? (
             <img
               className="d-block mx-auto carouVid"
-              src={cont.url}
+              src={cont.link}
               alt={`${contentImages.title}`}
             />
           ) : (
             <img
               className="d-block mx-auto carouImage"
-              src={cont.url}
+              src={cont.link}
               alt={`${contentImages.title}`}
             />
           )}

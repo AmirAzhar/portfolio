@@ -17,54 +17,48 @@ import { GiGraduateCap } from "react-icons/gi";
 
 // Components
 import Tags from "../tags";
-import Loader from "../loader";
 
-// Hooks
-import useGetFirebaseCollection from "../../hooks/useGetFirebaseCollection";
+// Data
+import { experience } from "../../resources/data";
 
 const ExperienceTimeline = () => {
-  const [experienceData, loading] = useGetFirebaseCollection("experience");
   return (
     <div className="experienceTimeline">
-      {loading ? (
-        <Loader />
-      ) : (
-        <VerticalTimeline>
-          {experienceData.map((exp) => (
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: "#112240", color: "#d9e2ec" }}
-              contentArrowStyle={{ borderRight: "7px solid  #112240" }}
-              iconStyle={{ background: "#112240", color: "#ff5aac" }}
-              icon={
-                exp.title === "BEng Computer Engineering" ? (
-                  <GiGraduateCap />
-                ) : (
-                  <MdWork />
-                )
-              }
-              date={exp.date}
-            >
-              <div className="vertical-timeline-element-title">{exp.title}</div>
-              <div className="vertical-timeline-element-subtitle">
-                {exp.subtitle}
-              </div>
-              <div className="vertical-timeline-element-body">
-                {exp.body}
-                <br />
-                <br />
+      <VerticalTimeline>
+        {experience.map((exp) => (
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "#112240", color: "#d9e2ec" }}
+            contentArrowStyle={{ borderRight: "7px solid  #112240" }}
+            iconStyle={{ background: "#112240", color: "#ff5aac" }}
+            icon={
+              exp.title === "BEng Computer Engineering" ? (
+                <GiGraduateCap />
+              ) : (
+                <MdWork />
+              )
+            }
+            date={exp.date}
+          >
+            <div className="vertical-timeline-element-title">{exp.title}</div>
+            <div className="vertical-timeline-element-subtitle">
+              {exp.subtitle}
+            </div>
+            <div className="vertical-timeline-element-body">
+              {exp.body}
+              <br />
+              <br />
 
-                {exp.extra}
-                <Row className="skillsRow">
-                  {exp.skills.map((text) => (
-                    <Tags text={text} />
-                  ))}
-                </Row>
-              </div>
-            </VerticalTimelineElement>
-          ))}
-        </VerticalTimeline>
-      )}
+              {exp.extra}
+              <Row className="skillsRow">
+                {exp.skills.map((text) => (
+                  <Tags text={text} />
+                ))}
+              </Row>
+            </div>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
     </div>
   );
 };

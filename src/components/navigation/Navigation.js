@@ -11,11 +11,10 @@ import { BiNews } from "react-icons/bi";
 // Packages
 import { elastic as Menu } from "react-burger-menu";
 
-// Hooks
-import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
+// Rescources
+import cv from "../../resources/cv.pdf";
 
 const Navigation = ({ screen }) => {
-  const [urlList] = useGetFirebaseItem(["portfolio/cv.pdf"]);
   return (
     <Menu>
       <a
@@ -55,7 +54,7 @@ const Navigation = ({ screen }) => {
       <a
         id="cv"
         className="menu-item"
-        href={urlList[0]}
+        href={cv}
         target="_blank"
         rel="noreferrer"
       >

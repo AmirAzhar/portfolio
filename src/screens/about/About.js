@@ -1,14 +1,13 @@
 // Styles
 import "./about.css";
 
-// Hooks
-import useGetFirebaseItem from "../../hooks/useGetFirebaseItem";
-
 // Components
 import Loader from "../../components/loader";
 
+// Resources
+import myPic from "../../resources/images/me.jpg";
+
 const About = () => {
-  const [urlList, loading] = useGetFirebaseItem(["portfolio/images/me.jpg"]);
   return (
     <div className="content">
       <div className="aboutContent">
@@ -41,13 +40,9 @@ const About = () => {
               and develop myself into a "T-shaped" individual!
             </h1>
           </div>
-          {loading ? (
-            <Loader />
-          ) : (
-            <div>
-              <img className="aboutImg" src={urlList[0]} alt="Amir Azhar" />
-            </div>
-          )}
+          <div>
+            <img className="aboutImg" src={myPic} alt="Amir Azhar" />
+          </div>
         </div>
       </div>
     </div>
